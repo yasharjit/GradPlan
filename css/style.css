@@ -1326,6 +1326,8 @@ textarea.w-select {
   z-index: 2000;
   outline: 0;
   opacity: 0;
+  user-select: none;
+  transform: translate(0, 0);
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;

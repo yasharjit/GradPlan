@@ -31,4 +31,9 @@ router.get("/projectCatalog", (req, res) => {
     });
 });
 
+router.get("/createproject", (req, res) => {
+    return res.render("createproject", {
+        title: "Add Project",
+    });
+});
 module.exports = router;

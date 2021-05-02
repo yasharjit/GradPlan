@@ -511,6 +511,10 @@ fieldset[disabled] .w-select {
   cursor: not-allowed;
   background-color: #eeeeee; }
 
+#add-project{
+  align:right;
+}
+
 textarea.w-input,
 textarea.w-select {
   height: auto; }
@@ -1223,7 +1227,8 @@ textarea.w-select {
   bottom: 0;
   left: 0;
   color: #fff;
-  font-family: "Helvetica Neue", Helvetica, Ubuntu, "Segoe UI", Verdana, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Ubuntu, "Segoe UI", Verdana,
+ sans-serif;
   font-size: 17px;
   line-height: 1.2;
   font-weight: 300;

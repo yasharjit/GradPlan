@@ -53,53 +53,73 @@
         </script>
     </head>
     <body>
-        <%- include('partials/navbar.ejs') %>
-        <div>
-            <div class="container"></div>
-        </div>
-        <div class="footer">
-            <div class="container">
-                <div class="footer-wrapper">
-                    <div class="footer-logo-column">
+        <div class="menu-wrapper">
+            <!-- <div class="w-dyn-list">
+                <div role="list" class="w-dyn-items">
+                    <div role="listitem" class="w-dyn-item">
+                        <a
+                            href="/alert/how-were-responding-to-covid-19"
+                            class="banner w-inline-block"
+                            ><div class="container">
+                                <div class="banner-content-wrapper">
+                                    <div class="pill primary alert-bar">
+                                        Announcement
+                                    </div>
+                                    <div>How we're responding to COVID-19</div>
+                                </div>
+                            </div></a
+                        >
+                    </div>
+                </div>
+            </div> -->
+            <div
+                data-collapse="medium"
+                data-animation="over-right"
+                data-duration="400"
+                role="banner"
+                class="navbar w-nav"
+            >
+                <div class="container">
+                    <div class="nav-wrapper">
                         <a
                             href="/"
                             aria-current="page"
-                            class="w-inline-block w--current"
+                            class="brand w-nav-brand w--current"
                             ><img
                                 src="images/logo.png"
                                 alt="Acme Outdoors Logo"
                         /></a>
+                        <div class="cart-nav-wrapper">
+                            <nav role="navigation" class="nav-menu w-nav-menu">
+                                <a
+                                    href="/"
+                                    aria-current="page"
+                                    class="nav-link w-nav-link w--current"
+                                    >Home</a
+                                ><a href="/about" class="nav-link w-nav-link"
+                                    >About</a
+                                ><a
+                                    href="/projectCatalog"
+                                    class="nav-link w-nav-link"
+                                    >Project Catalog</a
+                                ><a
+                                    href="/donations"
+                                    class="nav-link w-nav-link"
+                                    >Roadmap</a
+                                ><a href="/login" class="nav-link w-nav-link"
+                                    >Login</a
+                                ><a href="/signup" class="nav-link w-nav-link"
+                                    >Signup</a
+                                >
+                            </nav>
+
+                            <div class="nav-button w-nav-button">
+                                <div class="w-icon-nav-menu"></div>
+                            </div>
+                        </div>
                     </div>
-                    <!-- <div>
-                        <a
-                            href="https://twitter.com/webflow"
-                            target="_blank"
-                            class="social-footer-link w-inline-block"
-                            ><img
-                                src="https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e8407a25b6234aeec960fb9_Twitter_Social_Icon_Rounded_Square_White.svg"
-                                alt="Twitter Logo"
-                                width="30" /></a
-                        ><a
-                            href="https://www.facebook.com/webflow"
-                            class="social-footer-link w-inline-block"
-                            ><img
-                                src="https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e8407aa3fb6cf5576f1658b_Facebook%20Logo.svg"
-                                alt="Facebook Logo"
-                                width="30" /></a
-                        ><a
-                            href="https://www.instagram.com/webflow/"
-                            target="_blank"
-                            class="social-footer-link w-inline-block"
-                            ><img
-                                src="https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e840774014326b74bbeeeb6_Insta.svg"
-                                alt="Instagram Logo"
-                                width="30"
-                        /></a>
-                    </div> -->
                 </div>
-                <div class="footer-bottom-wrapper">
-                    <div class="small footer-small"></div>
-                </div>
+                <div class="w-nav-overlay" data-wf-ignore=""></div>
             </div>
         </div>
         <script

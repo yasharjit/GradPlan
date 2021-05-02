@@ -31,8 +31,8 @@ router.get("/projectCatalog", (req, res) => {
     });
 });
 
-router.get("/createproject", (req, res) => {
-    return res.render("createproject", {
+router.get("/createProject", (req, res) => {
+    return res.render("createProject", {
         title: "Add Project",
     });
 });

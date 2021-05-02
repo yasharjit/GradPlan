@@ -36,4 +36,5 @@ router.get("/createProject", (req, res) => {
         title: "Add Project",
     });
 });
+
 module.exports = router;

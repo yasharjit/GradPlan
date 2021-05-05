@@ -58,28 +58,19 @@
             <div class="container">
                 <main>
                     <div class="boxes">
+                        <% for(var project of projects ) { %>
                         <div class="box">
                             <div class="image"></div>
                             <div class="content-wrapper">
-                                <h3>Privacy Protection For Any Device</h3>
+                                <h3><%= project.projectName %></h3>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit. Nulla nisl ante, faucibus
-                                    sit amet placerat auctor, maximus id eros.
-                                    Curabitur mattis est ac sapien volutpat,
-                                    quis feugiat urna auctor. Donec libero
-                                    felis, fringilla a enim ac, semper ornare
-                                    nisi. Nulla vel aliquam mi biam.
+                                    <%= project.description %>
                                 </p>
-                                <a
-                                    href="https://duckduckgo.com/"
-                                    target="_blank"
-                                >
-                                    DuckDuckGo</a
-                                >
+                                <a href="/" target="_blank"> <%= project.field %> </a>
                             </div>
                         </div>
-                        <div class="box">
+                        <% } %>
+                        <!-- <div class="box">
                             <div class="image"></div>
                             <div class="content-wrapper">
                                 <h3>The Free Encyclopedia</h3>
@@ -91,11 +82,7 @@
                                     semper ornare nisi. Nulla vel aliquam mi
                                     biam.
                                 </p>
-                                <a
-                                    href="https://www.wikipedia.org/"
-                                    target="_blank"
-                                    >Wikipedia</a
-                                >
+                                <a href="/" target="_blank">Wikipedia</a>
                             </div>
                         </div>
 
@@ -111,9 +98,7 @@
                                     semper ornare nisi. Nulla vel aliquam mi
                                     biam.
                                 </p>
-                                <a
-                                    href="https://www.w3.org/WAI/"
-                                    target="_blank"
+                                <a href="/" target="_blank"
                                     >W3C Web Accessibility Initiative</a
                                 >
                             </div>
@@ -133,9 +118,7 @@
                                     semper ornare nisi. Nulla vel aliquam mi
                                     biam.
                                 </p>
-                                <a
-                                    href="https://developer.mozilla.org/en-US/"
-                                    target="_blank"
+                                <a href="/" target="_blank"
                                     >Mozilla Developer Network</a
                                 >
                             </div>
@@ -157,10 +140,8 @@
                                     and the general public. Our mission is to
                                     provide Universal Access to All Knowledge.
                                 </p>
-                                <a href="https://archive.org/" target="_blank"
-                                    >Internet Archive</a
-                                >
-                            </div>
+                                <a href="/" target="_blank">Internet Archive</a>
+                            </div> -->
                         </div>
                     </div>
                 </main>

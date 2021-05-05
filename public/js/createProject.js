@@ -1,4 +1,10 @@
-const passvaluec = async (data) => {
+const passvaluec = async (
+    projectName,
+    description,
+    field,
+    skillsNeeded,
+    experience
+) => {
     const hideAlert = () => {
         const el = document.querySelector(".alerts");
         if (el) {
@@ -18,7 +24,13 @@ const passvaluec = async (data) => {
         const result = await axios({
             method: "POST",
             url: "/api/v1/projects",
-            data,
+            data: {
+                projectName,
+                description,
+                field,
+                skillsNeeded,
+                experience,
+            },
         });
         if (result.data.status === "success") {
             // alert("deal created");
@@ -28,7 +40,8 @@ const passvaluec = async (data) => {
             }, 1500);
         }
     } catch (err) {
-        showAlert("error", err.response.data.message);
+        // showAlert("error", err.response.data.message);
+        console.log(err);
     }
 };
 
@@ -36,13 +49,13 @@ document.getElementById("newProjectForm").addEventListener("submit", (e) => {
     e.preventDefault();
     console.log("Hello!");
     const form = new FormData();
-    form.append("projectName", document.getElementById("projectName").value);
-    form.append("description", document.getElementById("description").value);
-    form.append("field", document.getElementById("field").value);
-    form.append("skillsNeeded", document.getElementById("skillsNeeded").value);
-    form.append("experience", document.getElementById("experience").value);
+    const projectName = document.getElementById("projectName").value;
+    const description = document.getElementById("description").value;
+    const field = document.getElementById("field").value;
+    const skillsNeeded = document.getElementById("skillsNeeded").value;
+    const experience = document.getElementById("experience").value;
     // if (document.getElementById("img").files[0]) {
     //     form.append("titleImg", document.getElementById("img").files[0]);
     // }
-    passvaluec(form);
+    passvaluec(projectName, description, field, skillsNeeded, experience);
 });

@@ -6,6 +6,7 @@ const path = require("path");
 const app = express();
 const projectRouter = require("./routes/projectRoutes");
 const viewRouter = require("./routes/viewRoutes");
+const userRoute = require("./routes/userRoutes");
 app.use(express.json());
 app.use("/public", express.static("public"));
 app.set("view engine", "ejs");
@@ -15,7 +16,7 @@ app.use(express.static(__dirname + "/public"));
 mongoose.connect(
     "mongodb+srv://user:N2O0PVe97QOmijGl@cluster0.kabvs.mongodb.net/test",
     { useNewUrlParser: true, useUnifiedTopology: true },
-    error => {
+    (error) => {
         if (!error) {
             console.log("Connection to db successful");
         } else {
@@ -24,7 +25,7 @@ mongoose.connect(
     }
 );
 app.use("/api/v1/projects", projectRouter);
-app.listen(port, err => {
+app.listen(port, (err) => {
     if (err) {
         console.log("Error in running server ", err);
         return;
@@ -33,3 +34,4 @@ app.listen(port, err => {
 });
 
 app.use("/", viewRouter);
+app.use("/api/v1/users", userRoute);

@@ -2275,7 +2275,8 @@ blockquote {
 
 .support-section {
   padding-top: 65px;
-  padding-bottom: 65px; }
+  padding-bottom: 65px; 
+}
 
 .support-top-wrapper {
   display: -webkit-box;
@@ -3685,6 +3686,7 @@ section {
 .row-sm .col-md-6 {
     padding-left: 5px;
     padding-right: 5px;
+    position: relative;
 }
 
 
@@ -3725,7 +3727,14 @@ section {
     user-select: none;
     /*color: #fff;*/
 }
-
+#align-center{
+  width: 100%;
+}
+.product-details{
+  
+  border:  1px solid black;
+  width: 60%;
+}
 ._p-qty .value-button {
     border: 0px solid #fe0000;
     height: 35px;

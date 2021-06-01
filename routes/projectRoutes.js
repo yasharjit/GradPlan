@@ -4,6 +4,7 @@ const projectController = require("./../controllers/projectController");
 router
     .route("/")
     .post(projectController.createProject)
-    .get(projectController.getAllProjects);
+    .get(projectController.getAllProjects)
+    .post(projectController.projectpage);
 
 module.exports = router;

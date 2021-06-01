@@ -40,4 +40,10 @@ router.get("/createProject", (req, res) => {
     });
 });
 
+router.get("/ProjectPage", (req, res) => {
+    return res.render("projectCatalogPage", {
+        title: "Project details",
+    });
+});
+
 module.exports = router;

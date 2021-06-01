@@ -4169,3 +4169,10 @@ ul li {
   height: 394px;
   width: 305px;
   z-index: 10; }
+
+._p-features li {
+  font-weight: 600; }
+
+.row {
+  margin-right: unset;
+  margin-left: unset; }

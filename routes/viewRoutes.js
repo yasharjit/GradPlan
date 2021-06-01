@@ -40,8 +40,8 @@ router.get("/createProject", (req, res) => {
     });
 });
 
-router.get("/ProjectPage", (req, res) => {
-    return res.render("projectCatalogPage", {
+router.get("/projectPage", (req, res) => {
+    return res.render("projectPage", {
         title: "Project details",
     });
 });

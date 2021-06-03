@@ -1,3 +1,4 @@
+const bcrypt = require("bcrypt");
 const mongoose = require("mongoose");
 const validator = require("validator");
 
@@ -29,5 +30,12 @@ const userSchema = mongoose.Schema({
         },
     },
 });
+
+userSchema.methods.verifyPassword = async function (
+    LoginPassword,
+    signUpPassword
+) {
+    return await bcrypt.compare(LoginPassword, signUpPassword);
+};
 
 module.exports = mongoose.model("User", userSchema);

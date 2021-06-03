@@ -2,14 +2,17 @@ const express = require("express");
 const mongoose = require("mongoose");
 const port = 8000;
 const path = require("path");
-
+const dotenv = require("dotenv");
+const cookieParser = require("cookie-parser");
 const app = express();
 const projectRouter = require("./routes/projectRoutes");
 const viewRouter = require("./routes/viewRoutes");
 const userRoute = require("./routes/userRoutes");
+const methodOverride = require("method-override");
 app.use(express.json());
 app.use("/public", express.static("public"));
 app.set("view engine", "ejs");
+app.use(methodOverride("_method"));
 app.set("views", path.join(__dirname, "views"));
 app.use(express.static(__dirname + "/public"));
 
@@ -24,6 +27,8 @@ mongoose.connect(
         }
     }
 );
+app.use(cookieParser());
+dotenv.config({ path: "./config.env" });
 app.use("/api/v1/projects", projectRouter);
 app.listen(port, (err) => {
     if (err) {

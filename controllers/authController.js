@@ -1,12 +1,13 @@
 const jwt = require("jsonwebtoken");
 const User = require("./../models/userModel");
+const catchAsync=require('./../utils/catchAsync');
 
 const signToken = (id) =>
     jwt.sign({ id: id }, process.env.JWT_SECRET, {
         expiresIn: process.env.JWT_EXPIRESIN,
     });
 
-exports.signup = async (req, res, next) => {
+exports.signup =catchAsync(async (req, res, next) => {
     try {
         const newUser = User.create({
             name: req.body.name,
@@ -36,10 +37,10 @@ exports.signup = async (req, res, next) => {
         });
     } catch (err) {
         res.status(404).json({
-            status: "fail",
+            status: "kya be",
         });
     }
-};
+});
 
 exports.login = async (req, res, next) => {
     try {
@@ -49,3 +50,38 @@ exports.login = async (req, res, next) => {
         });
     }
 };
+
+exports.getAllUsers=async(req,res)=>{
+    try{
+        const users=await User.find();
+
+        res.status(200).json({
+            status:'success',
+            results:users.length,
+            data:{users}
+        });
+    }
+    catch(err){
+        res.status(404).json({
+            status:'fail',
+            message:err
+        });
+    }
+};
+exports.getUser = async (req, res) => {
+    try {
+      const user = await User.findById(req.params.id);
+  
+      res.status(200).json({
+        status: 'success',
+        data: {
+          user
+        }
+      });
+    } catch (err) {
+      res.status(404).json({
+        status: 'fail',
+        message: err
+      });
+    }
+  };

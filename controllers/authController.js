@@ -49,3 +49,12 @@ exports.login = async (req, res, next) => {
         });
     }
 };
+
+exports.userPage = async (req, res, next) => {
+    try {
+    } catch (err) {
+        res.status(404).json({
+            status: "fail",
+        });
+    }
+};

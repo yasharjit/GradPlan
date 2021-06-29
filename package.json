@@ -21,7 +21,7 @@
     },
     "homepage": "https://github.com/yasharjit/GradPlan#readme",
     "devDependencies": {
-        "node-sass": "^5.0.0"
+        "node-sass": "^6.0.1"
     },
     "dependencies": {
         "bcrypt": "^5.0.1",

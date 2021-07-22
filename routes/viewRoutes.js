@@ -46,4 +46,10 @@ router.get("/projectPage", (req, res) => {
     });
 });
 
+router.get("/rating", (req, res) => {
+    return res.render("rating", {
+        title: "Rating",
+    });
+});
+
 module.exports = router;

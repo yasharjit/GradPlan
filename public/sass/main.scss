@@ -295,7 +295,6 @@ button {
     cursor: pointer;
     width: 20%;
     opacity: 0.9;
-    border radius: 50%;
 }
 
 button:hover {
@@ -2300,12 +2299,13 @@ blockquote {
     border-color: #f9f9f9;
     background-color: #f9f9f9;
     color: #222;
+    border-radius: 20px;
 }
 
 .btn.light:hover {
     border-color: #eb5757;
-    background-color: #eb5757;
-    color: #f9f9f9;
+    background-color: #cbc1c14a;
+    color: #272323;
 }
 
 .btn.light.outline {
@@ -4807,7 +4807,7 @@ h3 {
 }
 
 h2 {
-    color: #ffffff;
+    color: #201f1f;
     font-family: "muli";
     margin-top: 10px;
     font-weight: 800;

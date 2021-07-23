@@ -13,6 +13,7 @@ const app = express();
 const projectRouter = require("./routes/projectRoutes");
 const viewRouter = require("./routes/viewRoutes");
 const userRoute = require("./routes/userRoutes");
+//const reviewRouter = require('./routes/reviewRoutes');
 const methodOverride = require("method-override");
 app.use(express.json({limit:'10kb'}));
 app.use(mongoSanitize());
@@ -62,3 +63,4 @@ app.listen(port, (err) => {
 
 app.use("/", viewRouter);
 app.use("/api/v1/users", userRoute);
+//app.use('/api/v1/reviews', reviewRouter);

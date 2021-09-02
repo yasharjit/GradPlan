@@ -52,4 +52,10 @@ router.get("/rating", (req, res) => {
     });
 });
 
+router.get("/settings", (req, res) => {
+    return res.render("settings", {
+        title: "Account Settings",
+    });
+});
+
 module.exports = router;

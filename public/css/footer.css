@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+}
+
+.footer {
+    background: #000;
+    padding: 20px 0px;
+    font-family: 'Play', sans-serif;
+}
+
+.footer .column {
+    width: 30%;
+    margin: 0% 0%;
+    display: inline-flex;
+}
+
+.footer .column ul {
+    width: 140%;
+}
+
+.footer .column ul li {
+    list-style: none;
+    padding: 5px 0px;
+    color: gray;
+}
+
+.footer .column ul li a {
+    text-decoration: none;
+    font-size: 1em;
+    color: gray;
+    transition: 0.5s;
+}
+
+.footer .column ul li a:hover {
+    color: #f7bd00;
+}
+
+.footer .column ul .title {
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.footer .column ul li input {
+    padding: 10px 5px;
+    outline: none;
+    border: 0;
+    width: 70%;
+    height: 40px;
+    color: #1e1e1e;
+}
+
+.footer .column ul li .btn1 {
+    background: ;
+    outline: none;
+    border: 0;
+    padding: 5px;
+    color: #fff;
+    height: 44px;
+    position: relative;
+    top: 1px;
+    font-size: 0.5em;
+    background: #f7bd00;
+}
+
+.footer .column ul li i {
+    font-size: 2em;
+    margin: 0px 10px;
+}
+
+.sub-footer {
+    background: #1e1e1e;
+    padding: 5px 0px;
+    text-align: center;
+    color: gray;
+    font-size: 12px;
+    font-family: 'Play', sans-serif;
+}
+
+@media (max-width:720px) {
+    .footer .column {
+        width: 90%;
+        display: block;
+        margin: 0% 0%;
+    }
+    .footer .column:nth-child(2),
+    .footer .column:nth-child(3) {
+        width: 40%;
+        display: block;
+    }
+}
+
+@media (max-width:1200px) {
+    .footer .column ul li input {
+        padding: 5px 5px;
+        outline: none;
+        border: 0;
+        width: 70%;
+        height: 34px;
+        color: #1e1e1e;
+    }
+    .footer .column ul li .btn1 {
+        position: relative;
+        top: 2px;
+    }
+}
+
+@media (max-width:940px) {
+    .footer .column ul li input {
+        padding: 5px 5px;
+        outline: none;
+        border: 0;
+        width: 60%;
+        height: 34px;
+        color: #1e1e1e;
+    }
+    .footer .column ul li .btn1 {
+        position: relative;
+        top: 2px;
+    }
+}

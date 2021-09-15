@@ -4,7 +4,7 @@ const Project = require("../models/projectModel");
 
 router.get("/", (req, res) => {
     return res.render("index", {
-        title: "Home",
+        title: "GradPlan",
     });
 });
 
@@ -26,7 +26,7 @@ router.get("/about", (req, res) => {
     });
 });
 
-router.get("/projectCatalog", async (req, res) => {
+router.get("/projectCatalog", async(req, res) => {
     const allProjects = await Project.find();
     return res.render("projectCatalog", {
         title: "Project Catalog",

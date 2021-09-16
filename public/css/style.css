@@ -236,9 +236,9 @@ hr {
 
 /* Set a style for all buttons */
 button {
-  background-color: #05db05;
+  background-color: #0ca80c;
   color: white;
-  padding: 14px 20px;
+  padding: 11px 20px;
   margin: 8px 55px;
   border: none;
   cursor: pointer;
@@ -249,11 +249,11 @@ button {
   text-decoration: none; }
 
 button:hover {
-  opacity: 1; }
+  opacity: 0.6; }
 
 /* Extra styles for the cancel button */
 .cancelbtn {
-  padding: 14px 20px;
+  padding: 11px 20px;
   background-color: #f44336; }
 
 /* Float cancel and signup buttons and add an equal width */
@@ -323,6 +323,11 @@ html.w-mod-touch * {
   grid-row-end: 2; }
 
 .signupForm {
+  box-shadow: 0px 0px 15px 0px #bcbcbc;
+  width: 50%;
+  margin-left: 25%; }
+
+.loginForm {
   box-shadow: 0px 0px 15px 0px #bcbcbc;
   width: 50%;
   margin-left: 25%; }
@@ -2215,7 +2220,7 @@ blockquote {
   z-index: 900; }
 
 .navbar {
-  background-color: #4eaaff; }
+  background-color: #fff; }
 
 .nav-link {
   margin-right: 20px;
@@ -2224,14 +2229,14 @@ blockquote {
   border-radius: 5px;
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
-  color: #f9f9f9; }
+  color: black; }
 
 .nav-link:hover {
-  background-color: #222;
+  color: #db0808;
   background-image: none; }
 
 .nav-link.w--current {
-  color: #f9f9f9; }
+  color: #db0808; }
 
 .nav-wrapper {
   display: -webkit-box;

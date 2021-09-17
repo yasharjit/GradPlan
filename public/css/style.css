@@ -43,6 +43,7 @@ a {
 
 a:active,
 a:hover {
+  color: red;
   outline: 0; }
 
 abbr[title] {
@@ -699,6 +700,11 @@ textarea.w-select {
 .w-row .w-row {
   margin-left: 0;
   margin-right: 0; }
+
+.contact-us-page {
+  box-shadow: 0px 0px 15px 0px #bcbcbc;
+  width: 35%;
+  margin: 2% 0% 5% 30%; }
 
 .add-project {
   padding: 3%;
@@ -1827,8 +1833,7 @@ h2 {
   font-weight: bold; }
 
 a {
-  color: #eb5757;
-  text-decoration: underline; }
+  color: #eb5757; }
 
 a:hover {
   text-decoration: none; }

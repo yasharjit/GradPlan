@@ -58,4 +58,11 @@ router.get("/settings", (req, res) => {
     });
 });
 
+router.get("/contact", (req, res) => {
+    return res.render("contact", {
+        title: "Contact Us",
+    });
+});
+
+
 module.exports = router;

@@ -1838,6 +1838,11 @@ a {
 a:hover {
   text-decoration: none; }
 
+.about-us-page {
+  box-shadow: 0px 0px 15px 0px #bcbcbc;
+  width: 70%;
+  margin-left: 25%; }
+
 /*
   ul {
     margin-top: 25px;

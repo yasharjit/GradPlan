@@ -7,7 +7,9 @@ html {
 body {
     margin: 0;
 }
-
+a{
+    text-decoration: none;
+}
 article,
 aside,
 details,
@@ -856,9 +858,11 @@ textarea.w-select {
 }
 
 .add-project {
+    color:#fff !important;
     padding: 3%;
     margin-left: 347px;
-    background-color: rgb(201, 201, 201);
+    background-color: #176ede !important;
+    text-decoration: none;
 }
 
 .add-project:hover {
@@ -2803,6 +2807,7 @@ blockquote {
 .support-section {
     padding-top: 0px;
     padding-bottom: 65px;
+    background-color: #eeecec;
 }
 
 .support-top-wrapper {
@@ -3121,6 +3126,7 @@ blockquote {
     padding-top: 65px;
     padding-bottom: 10px;
     background-color: #222;
+    text-decoration: none;
 }
 
 .footer-wrapper {
@@ -5476,7 +5482,19 @@ $warning: #ffc107;
     width: 34px;
     font-size: 14px
 }
-
+.facebook{
+    
+    border-radius:50%;
+}
+.twitter{
+    border-radius:50%;
+}
+.dribbble{
+    border-radius:50%;
+}
+.linkedin{
+    border-radius:50%;
+}
 .social-icons a.facebook:hover {
     background-color: #3b5998
 }

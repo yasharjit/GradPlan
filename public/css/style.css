@@ -8,6 +8,9 @@ html {
 body {
   margin: 0; }
 
+a {
+  text-decoration: none; }
+
 article,
 aside,
 details,
@@ -707,9 +710,11 @@ textarea.w-select {
   margin: 2% 0% 5% 30%; }
 
 .add-project {
+  color: #fff !important;
   padding: 3%;
   margin-left: 347px;
-  background-color: #c9c9c9; }
+  background-color: #176ede !important;
+  text-decoration: none; }
 
 .add-project:hover {
   opacity: 0.7; }
@@ -2310,7 +2315,8 @@ blockquote {
 
 .support-section {
   padding-top: 0px;
-  padding-bottom: 65px; }
+  padding-bottom: 65px;
+  background-color: #eeecec; }
 
 .support-top-wrapper {
   display: -webkit-box;
@@ -2592,7 +2598,8 @@ blockquote {
 .footer {
   padding-top: 65px;
   padding-bottom: 10px;
-  background-color: #222; }
+  background-color: #222;
+  text-decoration: none; }
 
 .footer-wrapper {
   display: -webkit-box;
@@ -4545,6 +4552,18 @@ ul {
   height: 34px;
   width: 34px;
   font-size: 14px; }
+
+.facebook {
+  border-radius: 50%; }
+
+.twitter {
+  border-radius: 50%; }
+
+.dribbble {
+  border-radius: 50%; }
+
+.linkedin {
+  border-radius: 50%; }
 
 .social-icons a.facebook:hover {
   background-color: #3b5998; }

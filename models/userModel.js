@@ -2,6 +2,7 @@ const crypto = require("crypto");
 const bcrypt = require("bcrypt");
 const mongoose = require("mongoose");
 const validator = require("validator");
+const random = require("../utils/utils");
 
 const userSchema = mongoose.Schema({
     name: {
@@ -46,31 +47,42 @@ const userSchema = mongoose.Schema({
     passwordChangedAt: Date,
     passwordResetToken: String,
     passwordResetExpires: Date,
-    active:{
-        type:Boolean,
-        default:true,
-        select:false
-    }
+    active: {
+        type: Boolean,
+        default: true,
+        select: false,
+    },
 });
-userSchema.pre("save",async function (next) {
+
+userSchema.pre("save", async function (next) {
     if (!this.isModified("password")) return next();
 
-    this.password=await bcrypt.hash(this.password,12);
+    this.password = await bcrypt.hash(this.password, 12);
 
     this.passwordConfirm = undefined;
+
     next();
 });
 
-userSchema.pre('save',function(next){
-    if(!this.isModified('password')||this.isNew) return next();
-
-    this.passwordChangedAt=Date.now()-1000;
+userSchema.pre("save", async function (next) {
+    // this.password = await bcrypt.hash(this.password, 12);
+    this.verification_token = random();
+    this.verification_token_time = Date.now() + 10 * 60 * 1000;
+    this.timeStamp = Date.now();
+    console.log(this._id);
+    this.id = this._id;
     next();
 });
 
-userSchema.pre(/^find/,function(next){
+userSchema.pre("save", function (next) {
+    if (!this.isModified("password") || this.isNew) return next();
 
-    this.find({active:{$ne:false}});
+    this.passwordChangedAt = Date.now() - 1000;
+    next();
+});
+
+userSchema.pre(/^find/, function (next) {
+    this.find({ active: { $ne: false } });
     next();
 });
 
@@ -103,8 +115,8 @@ userSchema.methods.createPasswordResetToken = function () {
         .update(resetToken)
         .digest("hex");
 
-        this.passwordResetExpires=Date.now()+10*60*1000;
-        return resetToken;
+    this.passwordResetExpires = Date.now() + 10 * 60 * 1000;
+    return resetToken;
 };
 
 module.exports = mongoose.model("User", userSchema);

@@ -1,6 +1,8 @@
 const express = require("express");
 const router = express.Router();
+const catchAsync = require("../utils/catchAsync");
 const Project = require("../models/projectModel");
+const User = require("../models/userModel");
 
 router.get("/", (req, res) => {
     return res.render("index", {
@@ -26,7 +28,7 @@ router.get("/about", (req, res) => {
     });
 });
 
-router.get("/projectCatalog", async(req, res) => {
+router.get("/projectCatalog", async (req, res) => {
     const allProjects = await Project.find();
     return res.render("projectCatalog", {
         title: "Project Catalog",
@@ -64,5 +66,14 @@ router.get("/contact", (req, res) => {
     });
 });
 
+router.get(
+    "/project/:id/postedBy/:userid",
+    catchAsync(async function (req, res) {
+        const poster = await User.findById(req.params.userid);
+        const project = await Deal.findById(req.params.id);
+        const user = await User.findById(req.logged);
+        res.render("projectCatalogPage", { project, user, poster });
+    })
+);
 
 module.exports = router;

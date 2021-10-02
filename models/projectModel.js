@@ -4,6 +4,10 @@ const projectSchema = mongoose.Schema({
     projectName: {
         type: String,
     },
+    createdAt: {
+        type: Number,
+        default: Date.now(),
+    },
     description: {
         type: String,
     },
@@ -19,28 +23,31 @@ const projectSchema = mongoose.Schema({
     ratingsAverage: {
         type: Number,
         default: 4.5,
-        min: [1, 'Rating must be above 1.0'],
-        max: [5, 'Rating must be below 5.0'],
-        set: val => Math.round(val * 10) / 10 // 4.666666, 46.6666, 47, 4.7
-      },
-      ratingsQuantity: {
+        min: [1, "Rating must be above 1.0"],
+        max: [5, "Rating must be below 5.0"],
+        set: (val) => Math.round(val * 10) / 10, // 4.666666, 46.6666, 47, 4.7
+    },
+    ratingsQuantity: {
         type: Number,
-        default: 0
-      },
+        default: 0,
+    },
+    user: {
+        type: mongoose.Schema.ObjectId,
+        ref: "User",
+        //required: true,
+    },
 });
 
 projectSchema.index({ ratingsAverage: -1 });
-
 
 // projectSchema.pre(/^find/, function(next) {
 //     this.populate({
 //       path: 'guides',
 //       select: '-__v -passwordChangedAt'
 //     });
-  
+
 //     next();
 // });
-
 
 // projectSchema.statics.calcAverageRatings = async function(projectId) {
 //   console.log(projectId)
@@ -57,7 +64,7 @@ projectSchema.index({ ratingsAverage: -1 });
 //       }
 //     ]);
 //     // console.log(stats);
-  
+
 //     if (stats.length > 0) {
 //       await Project.findByIdAndUpdate(projectId, {
 //         ratingsQuantity: stats[0].nRating,

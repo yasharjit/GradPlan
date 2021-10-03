@@ -271,7 +271,7 @@ th {
 input[type="text"],
 input[type="password"] {
     width: 100%;
-    padding: 15px;
+    // padding: 15px;
     margin: 5px 0 22px 0;
     display: inline-block;
     border: none;
@@ -859,10 +859,11 @@ textarea.w-select {
 
 .add-project {
     color:#fff !important;
-    padding: 3%;
-    margin-left: 347px;
+    padding: 2.5%;
+    margin-left: 78%;
     background-color: #176ede !important;
     text-decoration: none;
+    border-radius: 20px;
 }
 
 .add-project:hover {
@@ -2930,8 +2931,8 @@ blockquote {
 
 .safe-section {
     min-height: 550px;
-    background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(34, 34, 34, 0.17)), to(#222)), url("https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e83fb3a6948e1f05b20527f_nathan-dumlao-pLoMDKtl-JY-unsplash.jpg");
-    background-image: linear-gradient(180deg, rgba(34, 34, 34, 0.17), #222), url("https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e83fb3a6948e1f05b20527f_nathan-dumlao-pLoMDKtl-JY-unsplash.jpg");
+    //background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(34, 34, 34, 0.17)), to(#222)), url("https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e83fb3a6948e1f05b20527f_nathan-dumlao-pLoMDKtl-JY-unsplash.jpg");
+    //background-image: linear-gradient(180deg, rgba(34, 34, 34, 0.17), #222), url("https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e83fb3a6948e1f05b20527f_nathan-dumlao-pLoMDKtl-JY-unsplash.jpg");
     background-position: 0px 0px, 50% 50%;
     background-size: auto, cover;
 }
@@ -5191,9 +5192,9 @@ td,
 textarea,
 th,
 ul {
-    -webkit-border-radius: 0 !important;
-    -moz-border-radius: 0 !important;
-    border-radius: 0 !important;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
 }
 
 .dashboard-stat,
@@ -5273,7 +5274,7 @@ ul {
 [class^="glyphicon-"],
 [class^="icon-"] {
     display: inline-block;
-    line-height: 70px;
+    line-height: 44px;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -5347,7 +5348,7 @@ $warning: #ffc107;
     font-size: 16px;
     line-height: 1.9;
     color: #737373;
-    margin-top: 5%;
+    // margin-top: 5%;
 }
 
 .site-footer hr {

@@ -859,11 +859,11 @@ textarea.w-select {
 
 .add-project {
     color:#fff !important;
-    padding: 2.5%;
-    margin-left: 78%;
+    margin-left: 65%;
     background-color: #176ede !important;
     text-decoration: none;
     border-radius: 20px;
+    padding: 2% 5% 2% 5%;
 }
 
 .add-project:hover {
@@ -2809,6 +2809,7 @@ blockquote {
     padding-top: 0px;
     padding-bottom: 65px;
     background-color: #eeecec;
+
 }
 
 .support-top-wrapper {
@@ -4054,24 +4055,24 @@ blockquote {
     .support-square-image {
         right: -18%;
     }
-    .safe-wrapper {
-        padding-bottom: 25px;
-        -webkit-box-pack: end;
-        -webkit-justify-content: flex-end;
-        -ms-flex-pack: end;
-        justify-content: flex-end;
-    }
-    .shop-top-wrapper {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-box-align: start;
-        -webkit-align-items: flex-start;
-        -ms-flex-align: start;
-        align-items: flex-start;
-    }
+    // .safe-wrapper {
+    //     padding-bottom: 25px;
+    //     -webkit-box-pack: end;
+    //     -webkit-justify-content: flex-end;
+    //     -ms-flex-pack: end;
+    //     justify-content: flex-end;
+    // }
+    // .shop-top-wrapper {
+    //     -webkit-box-orient: vertical;
+    //     -webkit-box-direction: normal;
+    //     -webkit-flex-direction: column;
+    //     -ms-flex-direction: column;
+    //     flex-direction: column;
+    //     -webkit-box-align: start;
+    //     -webkit-align-items: flex-start;
+    //     -ms-flex-align: start;
+    //     align-items: flex-start;
+    // }
     .shop-item-wrapper {
         width: 100%;
         margin-bottom: 50px;
@@ -4433,7 +4434,9 @@ blockquote {
         text-align: center;
     }
 }
-
+#img-team-roadmap{
+    width:30%;
+}
 .my_img {
     vertical-align: middle;
     position: absolute;
@@ -4895,7 +4898,7 @@ h4.dis span {
 
 li {
     display: inline-block;
-    margin-right: 25px;
+    margin-right: 5px;
 }
 
 ul li {

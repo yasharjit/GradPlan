@@ -66,6 +66,12 @@ router.get("/contact", (req, res) => {
     });
 });
 
+router.get("/userPage", (req, res) => {
+    return res.render("userPage", {
+        title: "User Page",
+    });
+});
+
 router.get(
     "/project/:id/postedBy/:userid",
     catchAsync(async function (req, res) {

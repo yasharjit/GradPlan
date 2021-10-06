@@ -11,7 +11,7 @@ const projectSchema = mongoose.Schema({
     description: {
         type: String,
     },
-    field: {
+    category: {
         type: String,
     },
     skillsNeeded: {

@@ -16,7 +16,8 @@ exports.createProject = async (req, res) => {
 
 exports.getAllProjects = async (req, res) => {
     try {
-        const allProjects = await Project.find();
+        const queryObj ={...req.query};
+        const allProjects = await Project.find(queryObj);
         res.status(200).json({
             status: "success",
             length: allProjects.length,

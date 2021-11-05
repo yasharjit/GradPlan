@@ -2226,7 +2226,8 @@ blockquote {
 .hero-section {
   min-height: 550px;
   background-position: 0px 0px, 50% 50%;
-  background-size: auto, cover; }
+  background-size: auto, cover;
+  background-color: #e9e6e6; }
 
 .hero-section.about-hero {
   background-image: -webkit-gradient(linear, left bottom, left top, from(#222), to(rgba(34, 34, 34, 0))), url("https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e840df8e2c9cc7677e4f00e_felix-rostig-UmV2wr-Vbq8-unsplash.jpg");
@@ -2317,7 +2318,7 @@ blockquote {
 .support-section {
   padding-top: 0px;
   padding-bottom: 65px;
-  background-color: #eeecec; }
+  background-color: white; }
 
 .support-top-wrapper {
   display: -webkit-box;
@@ -2429,7 +2430,7 @@ blockquote {
   bottom: -101%; }
 
 .safe-section {
-  min-height: 550px;
+  min-height: 415px;
   background-position: 0px 0px, 50% 50%;
   background-size: auto, cover; }
 
@@ -3682,7 +3683,7 @@ blockquote {
     text-align: center; } }
 
 #img-team-roadmap {
-  width: 30%; }
+  width: 80%; }
 
 .my_img {
   vertical-align: middle;

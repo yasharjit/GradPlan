@@ -2705,6 +2705,7 @@ blockquote {
     // background-image: linear-gradient(360deg, #222, rgba(34, 34, 34, 0)), url("https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e83f98bae1ad80129fcd7e5_wu-jianxiong-UniC8xhlzaE-unsplash.jpg");
     background-position: 0px 0px, 50% 50%;
     background-size: auto, cover;
+    background-color: #e9e6e6;
 }
 
 .hero-section.about-hero {
@@ -2808,7 +2809,7 @@ blockquote {
 .support-section {
     padding-top: 0px;
     padding-bottom: 65px;
-    background-color: #eeecec;
+    background-color: white;
 
 }
 
@@ -2936,7 +2937,7 @@ blockquote {
 }
 
 .safe-section {
-    min-height: 550px;
+    min-height: 415px;
     //background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(34, 34, 34, 0.17)), to(#222)), url("https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e83fb3a6948e1f05b20527f_nathan-dumlao-pLoMDKtl-JY-unsplash.jpg");
     //background-image: linear-gradient(180deg, rgba(34, 34, 34, 0.17), #222), url("https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e83fb3a6948e1f05b20527f_nathan-dumlao-pLoMDKtl-JY-unsplash.jpg");
     background-position: 0px 0px, 50% 50%;
@@ -4435,7 +4436,7 @@ blockquote {
     }
 }
 #img-team-roadmap{
-    width:30%;
+    width:80%;
 }
 .my_img {
     vertical-align: middle;

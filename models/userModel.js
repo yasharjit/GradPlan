@@ -52,6 +52,15 @@ const userSchema = mongoose.Schema({
         default: true,
         select: false,
     },
+    friendships: [
+        { 
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'Friendship' 
+        }
+    ]
+
+}, {
+    timestamps: true
 });
 
 userSchema.pre("save", async function (next) {

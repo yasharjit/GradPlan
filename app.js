@@ -13,8 +13,8 @@ const app = express();
 const projectRouter = require("./routes/projectRoutes");
 const viewRouter = require("./routes/viewRoutes");
 const userRoute = require("./routes/userRoutes");
-//const reviewRouter = require('./routes/reviewRoutes');
 const methodOverride = require("method-override");
+
 app.use(express.json({limit:'10kb'}));
 app.use(mongoSanitize());
 app.use(xss());
@@ -26,16 +26,20 @@ app.set("view engine", "ejs");
 app.use(methodOverride("_method"));
 app.set("views", path.join(__dirname, "views"));
 app.use(express.static(__dirname + "/public"));
-
 app.use(helmet())
+app.use(cookieParser());
+app.use("/", viewRouter);
+app.use("/api/v1/projects", projectRouter);
+app.use("/api/v1/users", userRoute);
+app.use('/api',limiter);
+
+dotenv.config({ path: "./config.env" });
 
 const limiter=rateLimit({
     max:100,
     windowMs:60*60*1000,
     message:'too many requests from this IP,please try again in an hour'
 });
-app.use('/api',limiter);
-
 
 mongoose.connect(
     "mongodb+srv://user:N2O0PVe97QOmijGl@cluster0.kabvs.mongodb.net/test",
@@ -49,10 +53,6 @@ mongoose.connect(
     }
 );
 
-
-app.use(cookieParser());
-dotenv.config({ path: "./config.env" });
-app.use("/api/v1/projects", projectRouter);
 app.listen(port, (err) => {
     if (err) {
         console.log("Error in running server ", err);
@@ -60,7 +60,3 @@ app.listen(port, (err) => {
     }
     console.log("Express server is running on port: ", port);
 });
-
-app.use("/", viewRouter);
-app.use("/api/v1/users", userRoute);
-//app.use('/api/v1/reviews', reviewRouter);

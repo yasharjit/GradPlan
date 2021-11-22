@@ -31,7 +31,6 @@ app.use(cookieParser());
 app.use("/", viewRouter);
 app.use("/api/v1/projects", projectRouter);
 app.use("/api/v1/users", userRoute);
-app.use('/api',limiter);
 
 dotenv.config({ path: "./config.env" });
 
@@ -40,6 +39,8 @@ const limiter=rateLimit({
     windowMs:60*60*1000,
     message:'too many requests from this IP,please try again in an hour'
 });
+
+app.use('/api',limiter);
 
 mongoose.connect(
     "mongodb+srv://user:N2O0PVe97QOmijGl@cluster0.kabvs.mongodb.net/test",

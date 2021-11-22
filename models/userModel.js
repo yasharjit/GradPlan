@@ -4,64 +4,66 @@ const mongoose = require("mongoose");
 const validator = require("validator");
 const random = require("../utils/utils");
 
-const userSchema = mongoose.Schema({
-    name: {
-        type: String,
-        required: [true, "Please tell us your name"],
-    },
-    email: {
-        type: String,
-        unique: true,
-        lowercase: true,
-        required: [true, "Enter email"],
-        validate: [validator.isEmail, "Please enter a valid email"],
-    },
-    //photo: String,
-    role: {
-        type: String,
-        enum: ["user", "admin"],
-        default: "user",
-    },
-    phoneNo: {
-        type: Number,
-    },
-    university: {
-        type: String,
-    },
-    password: {
-        type: String,
-        required: [true, "Enter Passeord"],
-        minlength: 8,
-        select: false,
-    },
-    passwordConfirm: {
-        type: String,
-        required: [true, "Confirm Password"],
-        validate: {
-            validator: function (el) {
-                return el === this.password;
-            },
-            message: "Passwords Do Not Match",
+const userSchema = mongoose.Schema(
+    {
+        name: {
+            type: String,
+            required: [true, "Please tell us your name"],
         },
+        email: {
+            type: String,
+            unique: true,
+            lowercase: true,
+            required: [true, "Enter email"],
+            validate: [validator.isEmail, "Please enter a valid email"],
+        },
+        //photo: String,
+        role: {
+            type: String,
+            enum: ["user", "admin"],
+            default: "user",
+        },
+        phoneNo: {
+            type: Number,
+        },
+        university: {
+            type: String,
+        },
+        password: {
+            type: String,
+            required: [true, "Enter Passeord"],
+            minlength: 8,
+            select: false,
+        },
+        passwordConfirm: {
+            type: String,
+            required: [true, "Confirm Password"],
+            validate: {
+                validator: function (el) {
+                    return el === this.password;
+                },
+                message: "Passwords Do Not Match",
+            },
+        },
+        passwordChangedAt: Date,
+        passwordResetToken: String,
+        passwordResetExpires: Date,
+        active: {
+            type: Boolean,
+            default: true,
+            select: false,
+        },
+        friendships: [
+            {
+                type: mongoose.Schema.Types.ObjectId,
+                ref: "Friendship",
+            },
+        ],
     },
-    passwordChangedAt: Date,
-    passwordResetToken: String,
-    passwordResetExpires: Date,
-    active: {
-        type: Boolean,
-        default: true,
-        select: false,
-    },
-    friendships: [
-        { 
-            type: mongoose.Schema.Types.ObjectId,
-            ref: 'Friendship' 
-        }
-    ]
-
-}, {
-    timestamps: true
-});
+    {
+        timestamps: true,
+    }
+);
 
 userSchema.pre("save", async function (next) {
     if (!this.isModified("password")) return next();

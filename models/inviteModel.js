@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 const crypto = require("crypto");
 const bcrypt = require("bcrypt");
 const mongoose = require("mongoose");
@@ -9,14 +9,14 @@ const inviteSchema = new mongoose.Schema({
     // the user who sent this request
     from_user: {
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'User'
+        ref: "User",
     },
     // the user who accepted this request
     to_user: {
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'User'
+        ref: "User",
     },
 });
 
-const Invite = mongoose.model('Invite', inviteSchema);
+const Invite = mongoose.model("Invite", inviteSchema);
 module.exports = Invite;

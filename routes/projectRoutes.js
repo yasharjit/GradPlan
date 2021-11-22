@@ -16,10 +16,8 @@ router
     .get(projectController.getProject)
     .patch(projectController.updateProject);
 
-    router
-    .route('/:id/rate')
+router
+    .route("/:id/rate")
     //.get(projectController.getRating)
-    .patch(
-      projectController.updateRating
-    )
+    .patch(projectController.updateRating);
 module.exports = router;

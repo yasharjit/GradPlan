@@ -59,37 +59,53 @@
                 <form id="newProjectForm" method="POST">
                     <div class="container">
                         <center>
-                            <h1>Create Your Roadmap</h1>
+                            <h1>Get Your Roadmap</h1>
                             <p>
-                                Please fill in this form to create a new
-                                roadmap.
+                                Please fill in this form to get a roadmap for
+                                your skill of choice.
                             </p>
                         </center>
                         <hr />
 
-                        <label for="roadmapName"><b>Roadmap Name</b></label>
-                        <input
-                            type="text"
-                            placeholder="Enter project name"
-                            id="projectName"
-                            required
-                        />
+                        <label for="skillName"><b>Skill</b></label>
+                        <select id="skillName">
+                            <option value="Frontend Development">
+                                Frontend Development
+                            </option>
+                            <option value="Backend Development">
+                                Backend Development
+                            </option>
+                            <option value="Full Stack Development">
+                                Full Stack Development
+                            </option>
+                            <option value="App Development">
+                                App Development
+                            </option>
+                            <option value="Machine Learning">
+                                Machine Learning
+                            </option>
+                            <option value="Game Development">
+                                Game Development
+                            </option>
+                            <option value="Interview Preparation with C++">
+                                Interview Preparation with C++
+                            </option>
+                            <option value="Interview Preparation with Python">
+                                Interview Preparation with Python
+                            </option>
+                            <option value="App Development">
+                                Interview Preparation with Java
+                            </option>
+                        </select>
 
-                        <label for="skillsNeeded"><b>Skills Required</b></label>
-                        <input
-                            type="text"
-                            placeholder="skills"
-                            id="skillsNeeded"
-                            required
-                        />
-
-                        <label for="experience"><b>Experiences level</b></label>
-                        <input
-                            type="text"
-                            placeholder="experience"
-                            id="experience"
-                            required
-                        />
+                        <label for="presentSkillLevel"
+                            ><b>Present Skill Level</b></label
+                        >
+                        <select id="presentSkillLevel">
+                            <option value="Beginner">Beginner</option>
+                            <option value="Intermediate">Intermediate</option>
+                            <option value="Advanced">Advanced</option>
+                        </select>
 
                         <div class="clearfix">
                             <button type="button" class="cancelbtn">

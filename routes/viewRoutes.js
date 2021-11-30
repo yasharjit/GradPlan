@@ -72,6 +72,12 @@ router.get("/userPage", (req, res) => {
     });
 });
 
+router.get("/roadmapBuilder", (req, res) => {
+    return res.render("roadmapBuilder", {
+        title: "Roadmap Builder",
+    });
+});
+
 router.get(
     "/project/:id/postedBy/:userid",
     catchAsync(async function (req, res) {

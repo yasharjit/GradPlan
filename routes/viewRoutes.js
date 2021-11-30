@@ -78,6 +78,12 @@ router.get("/roadmapBuilder", (req, res) => {
     });
 });
 
+router.get("/createRoadmap", (req, res) => {
+    return res.render("createRoadmap", {
+        title: "Create Roadmap Form",
+    });
+});
+
 router.get(
     "/project/:id/postedBy/:userid",
     catchAsync(async function (req, res) {

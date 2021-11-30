@@ -18,8 +18,8 @@
         <script type="text/javascript">
             WebFont.load({
                 google: {
-                    families: ["Sen:regular,700,800"]
-                }
+                    families: ["Sen:regular,700,800"],
+                },
             });
         </script>
         <link
@@ -607,11 +607,12 @@
             </div>
         </div>
         <%- include('partials/footer.ejs') %>
+        <script src="js/roadmap.js"></script>
         <script>
-            $("#infographic article").click(function() {
+            $("#infographic article").click(function () {
                 $(this).toggleClass("active");
             });
-            $("#infographic article .controls .btn").on("click", function(e) {
+            $("#infographic article .controls .btn").on("click", function (e) {
                 e.preventDefault();
                 e.stopPropagation();
                 var currentEl = $(this).closest("article");
@@ -631,13 +632,13 @@
                 if (supportsNativeSmoothScroll) {
                     window.scrollTo({
                         top: y + window.pageYOffset - 300,
-                        behavior: "smooth"
+                        behavior: "smooth",
                     });
                 } else {
                     window.scrollTo(0, y + window.pageYOffset - 300);
                 }
             });
-            $(document).mouseup(function(e) {
+            $(document).mouseup(function (e) {
                 var tgt = $("#infographic article.active");
                 if (!tgt.is(e.target) && tgt.has(e.target).length === 0)
                     tgt.removeClass("active");
@@ -647,28 +648,28 @@
             const Roadmap = [
                 {
                     skill: "frontend",
-                    lvl: "beginner"
+                    lvl: "beginner",
                 },
                 {
                     skill: "frontend",
-                    lvl: "intermediate"
+                    lvl: "intermediate",
                 },
                 {
                     skill: "frontend",
-                    lvl: "advanced"
+                    lvl: "advanced",
                 },
                 {
                     skill: "backend",
-                    lvl: "beginner"
+                    lvl: "beginner",
                 },
                 {
                     skill: "backend",
-                    lvl: "intermediate"
+                    lvl: "intermediate",
                 },
                 {
                     skill: "backend",
-                    lvl: "advanced"
-                }
+                    lvl: "advanced",
+                },
             ];
         </script>
         <script

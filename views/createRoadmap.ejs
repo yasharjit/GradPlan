@@ -18,7 +18,7 @@
             WebFont.load({ google: { families: ["Sen:regular,700,800"] } });
         </script>
         <script type="text/javascript">
-            !(function(o, c) {
+            !(function (o, c) {
                 var n = c.documentElement,
                     t = " w-mod-";
                 (n.className += t + "js"),
@@ -47,7 +47,7 @@
                 group: ",",
                 template:
                     '{{wf {"path":"symbol","type":"PlainText"} }} {{wf {"path":"amount","type":"CommercePrice"} }} {{wf {"path":"currencyCode","type":"PlainText"} }}',
-                hideDecimalForWholeNumbers: false
+                hideDecimalForWholeNumbers: false,
             };
         </script>
     </head>
@@ -55,7 +55,11 @@
         <%- include('partials/navbar.ejs') %>
         <div>
             <div class="container">
-                <form id="newProjectForm" onsubmit="assignVariables()">
+                <form
+                    id="newRoadmapForm"
+                    onsubmit="assignVariables()"
+                    action="#"
+                >
                     <div class="container">
                         <center>
                             <h1>Get Your Roadmap</h1>
@@ -68,12 +72,10 @@
 
                         <label for="skillName"><b>Skill</b></label>
                         <select id="skillName">
-                            <option value="Frontend Development">
+                            <option value="frontend">
                                 Frontend Development
                             </option>
-                            <option value="Backend Development">
-                                Backend Development
-                            </option>
+                            <option value="backend">Backend Development</option>
                             <option value="Full Stack Development">
                                 Full Stack Development
                             </option>
@@ -101,9 +103,9 @@
                             ><b>Present Skill Level</b></label
                         >
                         <select id="presentSkillLevel">
-                            <option value="Beginner">Beginner</option>
-                            <option value="Intermediate">Intermediate</option>
-                            <option value="Advanced">Advanced</option>
+                            <option value="beginner">Beginner</option>
+                            <option value="intermediate">Intermediate</option>
+                            <option value="advanced">Advanced</option>
                         </select>
 
                         <button type="submit" class="loginbtn" id="submitted">

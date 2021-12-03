@@ -1,4 +1,5 @@
 const express = require("express");
+const viewController = require("../controllers/viewController");
 const router = express.Router();
 const catchAsync = require("../utils/catchAsync");
 const Project = require("../models/projectModel");
@@ -93,5 +94,7 @@ router.get(
         res.render("projectCatalogPage", { project, user, poster });
     })
 );
+
+router.get("/search", viewController.autocomplete);
 
 module.exports = router;

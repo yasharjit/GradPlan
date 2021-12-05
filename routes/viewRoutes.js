@@ -100,11 +100,7 @@ router.get(
     catchAsync(async (req, res) => {
         let q = req.query.projectName;
         Project.find(
-            {
-                projectName: {
-                    $regex: new RegExp(q),
-                },
-            },
+            { projectName: { $regex: q, $options: "$i" } },
             // {
             //     _id: 0,
             //     __v: 0,

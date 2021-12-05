@@ -707,8 +707,7 @@ textarea.w-select {
 .contact-us-page {
   box-shadow: 0px 0px 15px 0px #bcbcbc;
   width: 35%;
-  margin: 2% 0% 5% 30%; 
-}
+  margin: 2% 0% 5% 30%; }
 
 .add-project {
   color: #fff !important;
@@ -1259,8 +1258,7 @@ textarea.w-select {
   bottom: 0;
   left: 0;
   color: #fff;
-  font-family: "Helvetica Neue", Helvetica, Ubuntu, "Segoe UI", Verdana,
- sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Ubuntu, "Segoe UI", Verdana, sans-serif;
   font-size: 17px;
   line-height: 1.2;
   font-weight: 300;
@@ -2227,6 +2225,7 @@ blockquote {
 
 .hero-section {
   min-height: 550px;
+  margin-top: -5%;
   background-position: 0px 0px, 50% 50%;
   background-size: auto, cover;
   background-color: #e9e6e6; }
@@ -4574,3 +4573,8 @@ ul {
     display: block;
     margin-right: 0;
     font-weight: 600; } }
+
+.team-main-page {
+  height: auto;
+  width: 32%;
+  margin: -15% 0% -15% 62%; }

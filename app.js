@@ -15,6 +15,14 @@ const viewRouter = require("./routes/viewRoutes");
 const userRoute = require("./routes/userRoutes");
 const methodOverride = require("method-override");
 
+const spawn = require("child_process").spawn;
+
+const processPython = spawn("python", ["./model_creation.py"]);
+
+processPython.stdout.on("data", (data) => {
+    console.log(`${data}`);
+});
+
 app.use(express.json({ limit: "10kb" }));
 app.use(mongoSanitize());
 app.use(xss());

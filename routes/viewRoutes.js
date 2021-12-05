@@ -95,6 +95,17 @@ router.get(
     })
 );
 
-router.get("/search", viewController.autocomplete);
+router.get(
+    "/search",
+    catchAsync(async (req, res) => {
+        let q = req.query.projectName;
+        Project.find(
+            { projectName: { $regex: q, $options: "$i" } },
+            function (err, data) {
+                res.json(data);
+            }
+        ).limit(10);
+    })
+);
 
 module.exports = router;

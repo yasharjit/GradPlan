@@ -101,10 +101,6 @@ router.get(
         let q = req.query.projectName;
         Project.find(
             { projectName: { $regex: q, $options: "$i" } },
-            // {
-            //     _id: 0,
-            //     __v: 0,
-            // },
             function (err, data) {
                 res.json(data);
             }

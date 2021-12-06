@@ -5,11 +5,7 @@ const catchAsync = require("../utils/catchAsync");
 const Project = require("../models/projectModel");
 const User = require("../models/userModel");
 
-router.get("/", (req, res) => {
-    return res.render("index", {
-        title: "GradPlan",
-    });
-});
+router.get("/", viewController.indexPage);
 
 router.get("/login", (req, res) => {
     return res.render("login", {

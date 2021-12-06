@@ -35,3 +35,16 @@ exports.autocomplete = catchAsync(async (req, res) => {
         }
     });
 });
+
+exports.indexPage = catchAsync(async (req, res) => {
+    if (req.query.search) {
+        const projects = await Project.find({
+            $text: { $search: req.query.search },
+        });
+        res.status(200).render("search", { projects });
+    } else {
+        res.status(200).render("index", {
+            title: "GradPlan",
+        });
+    }
+});

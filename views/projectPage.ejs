@@ -30,31 +30,56 @@
                 height: 18.5rem; 
                 margin-left:68%;
                 margin-top:1%; 
-                border: 1px solid lightgray;
+                border: 0px solid lightgray;
                 background-color: #f3f2f2;
+                border-radius: 15px;
+                padding: 10px;
             }
             .heading-style{
                 font-size: 15px;
                 padding: 2%;
             }
+            .recommend-style{
+                right: -19px;
+                top: 16px;
+                background-color: #FF8C00;
+                font-size: 15px;
+                padding: 4px 4px;
+                width: 120px;
+                margin-left: 61%;
+                border-radius: 15px;
+            }
+            span{
+                margin-top: -2%;
+                transform: rotate(45deg);
+            }
         </style>
+        <!-- <script>
+            function change_text(){
+                document.getElementById("#myButton").innerHTML = "Applied";
+            }
+        </script> -->
     </head>
     <body>
+
         <%- include('partials/navbar.ejs') %>
         <div class = "flex-container">
             <div class = "item">
-               <h6 class = "heading-style">Project Name:</h6> 
-               <h6 class = "heading-style">Project Categroy:</h6> 
-               <h6 class = "heading-style">Project Description:</h6> 
+                <span class = "recommend-style">RECOMMENDED</span>
+                <h6 class = "heading-style">Project Name:</h6> 
+                <h6 class = "heading-style">Project Categroy:</h6> 
+                <h6 class = "heading-style">Project Description:</h6> 
             </div>
 
             <div class = "item">
+                <span class = "recommend-style">RECOMMENDED</span>
                 <h6 class = "heading-style">Project Name:</h6> 
                 <h6 class = "heading-style">Project Categroy:</h6> 
                 <h6 class = "heading-style">Project Description:</h6> 
             </div>
             
             <div class = "item">
+                <span class = "recommend-style">RECOMMENDED</span>
                 <h6 class = "heading-style">Project Name:</h6> 
                 <h6 class = "heading-style">Project Categroy:</h6> 
                 <h6 class = "heading-style">Project Description:</h6> 
@@ -118,7 +143,10 @@
                                     <div class="_p-qty-and-cart">
                                         <div class="_p-add-cart">
                                             <button
-                                                class="btn-theme btn buy-btn"
+                                                type="button"
+                                                onclick="change_text()"
+                                                id = "myButton"
+                                                class = "btn-theme btn buy-btn"
                                                 tabindex="0"
                                                 style="margin-left: 40%">
                                                 <i
@@ -151,16 +179,7 @@
             </div>
             
         </section>
-        <script type="text/javascript">
-            // function apply(){
-            //     var btn = document.getElementByClass("btn-theme btn buy-btn");
-            //     btn.value = ''; 
-            //     btn.innerHTML = 'Applied';
-            // }
-            // $(function () {
-            //     var btn = $("btn-theme btn buy-btn").val('Applied');
-            // });
-        </script>
+        
         <%- include('partials/footer.ejs') %>
     </body>
 </html>

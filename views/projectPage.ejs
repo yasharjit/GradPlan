@@ -18,15 +18,55 @@
             type="image/gif"
             sizes="16x16"
         />
+        <style>
+            .flex-container{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around; 
+            }
+            .item{
+                margin: 10% 0% 0% 0%;
+                width: 24%; 
+                height: 23.5rem; 
+                margin-left:68%;
+                margin-top:4%; 
+                border: 1px solid lightgray;
+                background-color: #f3f2f2;
+            }
+            .heading-style{
+                font-size: 15px;
+                padding: 2%;
+            }
+        </style>
     </head>
     <body>
         <%- include('partials/navbar.ejs') %>
+        <div class = "flex-container">
+            <div class = "item">
+               <h6 class = "heading-style">Project Name:</h6> 
+               <h6 class = "heading-style">Project Categroy</h6> 
+               <h6 class = "heading-style">Project Description:</h6> 
+            </div>
+
+            <div class = "item">
+                <h6 class = "heading-style">Project Name:</h6> 
+                <h6 class = "heading-style">Project Categroy</h6> 
+                <h6 class = "heading-style">Project Description:</h6> 
+            </div>
+            
+            <div class = "item">
+                <h6 class = "heading-style">Project Name:</h6> 
+                <h6 class = "heading-style">Project Categroy</h6> 
+                <h6 class = "heading-style">Project Description:</h6> 
+            </div>
+        </div>
+        
         <section id="services" class="services section-bg">
             <div class="container-fluid">
                 <div class="col-sm-12 text-center mb-4"></div>
                 <div class="row row-sm">
-                    <div class="col-md-6" style="margin-left: 25%">
-                        <div class="_product-detail-content">
+                    <div class="col-md-6" style="margin-left: 14%">
+                        <div class="_product-detail-content" style="margin-top:-121%;">
                             <center>
                                 <p class="_p-name">
                                     GradPlan - One stop shop for everything
@@ -110,7 +150,9 @@
                     </div>
                 </div>
             </div>
+            
         </section>
+        
         <%- include('partials/footer.ejs') %>
     </body>
 </html>

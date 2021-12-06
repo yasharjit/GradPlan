@@ -26,10 +26,10 @@
             }
             .item{
                 margin: 10% 0% 0% 0%;
-                width: 24%; 
-                height: 23.5rem; 
+                width: 22%; 
+                height: 18.5rem; 
                 margin-left:68%;
-                margin-top:4%; 
+                margin-top:1%; 
                 border: 1px solid lightgray;
                 background-color: #f3f2f2;
             }
@@ -65,8 +65,8 @@
             <div class="container-fluid">
                 <div class="col-sm-12 text-center mb-4"></div>
                 <div class="row row-sm">
-                    <div class="col-md-6" style="margin-left: 14%">
-                        <div class="_product-detail-content" style="margin-top:-121%;">
+                    <div class="col-md-6" style="margin-left: 11%">
+                        <div class="_product-detail-content" style="margin-top:-88%;">
                             <center>
                                 <p class="_p-name">
                                     GradPlan - One stop shop for everything
@@ -120,14 +120,13 @@
                                             <button
                                                 class="btn-theme btn buy-btn"
                                                 tabindex="0"
-                                                style="margin-left: 40%"
-                                            >
+                                                style="margin-left: 40%">
                                                 <i
                                                     class="fa fa-paper-plane"
                                                 ></i>
                                                 Apply Now
                                             </button>
-                                            <input
+                                            <!-- <input
                                                 type="hidden"
                                                 name="pid"
                                                 value="18"
@@ -141,7 +140,7 @@
                                                 type="hidden"
                                                 name="url"
                                                 value=""
-                                            />
+                                            /> -->
                                         </div>
                                     </div>
                                 </form>
@@ -152,7 +151,16 @@
             </div>
             
         </section>
-        
+        <script type="text/javascript">
+            // function apply(){
+            //     var btn = document.getElementByClass("btn-theme btn buy-btn");
+            //     btn.value = ''; 
+            //     btn.innerHTML = 'Applied';
+            // }
+            // $(function () {
+            //     var btn = $("btn-theme btn buy-btn").val('Applied');
+            // });
+        </script>
         <%- include('partials/footer.ejs') %>
     </body>
 </html>

@@ -60,19 +60,20 @@
                     <div class="boxes">
                         <% for(var project of projects) { %>
                         <div class="box">
-                            <a href="<%= `/project/${project._id}/postedBy/${project.user}` %>">
-                            <div class="image"></div>
-                            <div class="content-wrapper">
-                                <h3><%= project.projectName %></h3>
-                                <p>
-                                    <%= project.description %>
-                                </p>
-                                <a href="/" target="_blank"> <%= project.field %> </a>
-                            </div>
+                            <a
+                                href="<%= `/project/${project._id}/postedBy/${project.user}` %>"
+                            >
+                                <div class="image"></div>
+                                <div class="content-wrapper">
+                                    <h3><%= project.projectName %></h3>
+                                    <p><%= project.description %></p>
+                                    <a href="/" target="_blank">
+                                        <%= project.field %>
+                                    </a>
+                                </div>
                             </a>
                         </div>
                         <% } %>
-                        </div>
                     </div>
                 </main>
             </div>
@@ -88,9 +89,6 @@
             src="https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/js/webflow.56d8ed5b7.js"
             type="text/javascript"
         ></script>
-        <script
-            src="../public/js/index.js"
-            type="text/javascript"
-        ></script>
+        <script src="../public/js/index.js" type="text/javascript"></script>
     </body>
 </html>

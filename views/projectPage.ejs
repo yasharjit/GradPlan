@@ -142,8 +142,8 @@
                                     <div class="_p-qty-and-cart">
                                         <div class="_p-add-cart">
                                             <button
-                                                type="button"
-                                                onclick="change_text()"
+                                                type="submit"
+                                                onclick="change()"
                                                 id = "myButton"
                                                 class = "btn-theme btn buy-btn"
                                                 tabindex="0"
@@ -180,5 +180,12 @@
         </section>
         
         <%- include('partials/footer.ejs') %>
+        <script>
+            function change(){
+                let text = document.getElementById("myButton");
+                text.innerHTML="Applied";
+                text.style.backgroundColor="blue";
+            }
+        </script>
     </body>
 </html>

@@ -24,14 +24,12 @@ const passvalue = async (email, password) => {
             },
         });
         if (result.data.status === "success") {
-            // alert("deal created");
             showAlert("success", "Successfully logged in!");
             window.setTimeout(() => {
                 location.assign("/");
             }, 1500);
         }
     } catch (err) {
-        // showAlert("error", err.response.data.message);
         console.log(err);
     }
 };
@@ -42,8 +40,5 @@ document.getElementById("loginForm").addEventListener("submit", (e) => {
     const form = new FormData();
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
-    // if (document.getElementById("img").files[0]) {
-    //     form.append("titleImg", document.getElementById("img").files[0]);
-    // }
     passvalue(email, password);
 });

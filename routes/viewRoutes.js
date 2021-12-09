@@ -104,9 +104,9 @@ router.get(
     })
 );
 
-router.get("/teamFormation", (req, res) => {
-    return res.render("teamFormation", {
-        title: "Team Formation",
+router.get("/teamMembersPage", (req, res) => {
+    return res.render("teamMembersPage", {
+        title: "Team Members",
     });
 });
 

@@ -267,7 +267,9 @@ button:hover {
 .signupbtn,
 .loginbtn {
   float: left;
-  width: 25%; }
+  width: 25%;
+  border-radius: 25px;
+  margin-left: 37%; }
 
 /* Add padding to container elements */
 .container {

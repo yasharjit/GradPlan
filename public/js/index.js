@@ -106,3 +106,15 @@ $(document).ready(function () {
             $(_this).siblings('input#number').val(value);
         }
     });
+
+  $('.btn-invite').click(function(e){
+      e.preventDefault();
+      $(this).removeClass('active');
+      $(this).siblings('.btn-invited').addClass('active');
+  });
+
+  $('.btn-invited').click(function(e){
+      e.preventDefault();
+      $(this).removeClass('active');
+      $(this).siblings('.btn-invite').addClass('active');
+  });

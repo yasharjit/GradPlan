@@ -297,34 +297,44 @@ const CppRoadmap = [
 
 const JavaRoadmap = [
     {
-        skill: "frontend",
+        skill: "java",
         lvl: "beginner",
-        path: "hello1"
+        path: "https://www.udemy.com/course/java-in-depth-become-a-complete-java-engineer/?utm_source=adwords&utm_medium=udemyads&utm_campaign=Java_v.PROF_la.EN_cc.INDIA_ti.6336&utm_content=deal4584&utm_term=_._ag_120598243106_._ad_515258165208_._kw_fundamentals+of+java+programming_._de_c_._dm__._pl__._ti_kwd-489207743912_._li_9300790_._pd__._&matchtype=b&gclid=Cj0KCQiAzMGNBhCyARIsANpUkzNkKGGonhSja5ZfMAejJz4hdpmPvTVI0I9YgBc9NGSPsaXCSVCsCDkaApj_EALw_wcB"
     },
     {
-        skill: "frontend",
-        lvl: "intermediate",
-        path: "hello2"
-    },
-    {
-        skill: "frontend",
-        lvl: "advanced",
-        path: "hello3"
-    },
-    {
-        skill: "backend",
+        skill: "java",
         lvl: "beginner",
-        path: "hello4"
+        path: "https://www.codingninjas.com/courses/online-java-course?utm_source=google&utm_medium=[search]&utm_campaign=8982874779_91422301115_p_java%20course__491234739547_c&gclid=Cj0KCQiAzMGNBhCyARIsANpUkzNoBbYuv0oZ28u1n3NkbZLMCdYOWLwDkBslI4Hh4x2VfgYpl_kME-saAsYuEALw_wcB"
     },
     {
-        skill: "backend",
-        lvl: "intermediate",
-        path: "hello5"
+        skill: "java",
+        lvl: "beginner",
+        path: "https://www.coursera.org/specializations/java-programming"
     },
     {
-        skill: "backend",
+        skill: "java",
+        lvl: "beginner",
+        path: "https://www.udemy.com/course/java-tutorial/?LSNPUBID=JVFxdTr9V80&ranEAID=JVFxdTr9V80&ranMID=39197&ranSiteID=JVFxdTr9V80-UfB4ehpx3sT93US_xK8IFg"
+    },
+    {
+        skill: "java",
+        lvl: "beginner",
+        path: "https://www.coursera.org/learn/object-oriented-java?ranMID=40328&ranEAID=JVFxdTr9V80&ranSiteID=JVFxdTr9V80-RrApSZZnONtz7mk25VBYXQ&siteID=JVFxdTr9V80-RrApSZZnONtz7mk25VBYXQ&utm_content=10&utm_medium=partners&utm_source=linkshare&utm_campaign=JVFxdTr9V80"
+    },
+    {
+        skill: "java",
         lvl: "advanced",
-        path: "hello6"
+        path: "https://www.simplilearn.com/java-full-stack-developer-certification-training-course?&utm_source=google&utm_medium=cpc&utm_term=%2Bjava%20%2Bcourse&utm_content=949673033-95299790303-420728905879&utm_device=c&utm_campaign=Search-TechCluster-SD-FullStack-IN-Main-AllDevice-adgroup-Java-Course&gclid=Cj0KCQiAzMGNBhCyARIsANpUkzMUp7J9aUsVfHnVXbhk1i1ggn6EiNhqTjQ42nh-1uXZnTAuTIfMLpIaAm-KEALw_wcB"
+    },
+    {
+        skill: "java",
+        lvl: "advanced",
+        path: "https://www.udemy.com/course/intermediate-advanced-java-programming/"
+    },
+    {
+        skill: "java",
+        lvl: "advanced",
+        path: "https://hackr.io/blog/best-java-courses"
     }
 ];
 

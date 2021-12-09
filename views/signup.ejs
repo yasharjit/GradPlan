@@ -6,6 +6,8 @@
         <meta content="width=device-width, initial-scale=1" name="viewport" />
 
         <link href="./css/style.css" rel="stylesheet" type="text/css" />
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script> -->
         <script
             src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"
             type="text/javascript"
@@ -60,7 +62,7 @@
     <body>
         <%- include('partials/navbar.ejs') %>
         <div class="container">
-            <form class="signupForm" method="POST">
+            <form class="signupForm" id="signupForm" method="POST">
                 <div class="container">
                     <center>
                         <h1>Sign Up</h1>
@@ -74,7 +76,6 @@
                         placeholder="Enter Name"
                         id="name"
                         name="name"
-                        required
                     />
 
                     <label for="email"><b>Email</b></label>
@@ -83,7 +84,6 @@
                         placeholder="Enter Email"
                         id="email"
                         name="email"
-                        required
                     />
 
                     <label for="password"><b>Password</b></label>
@@ -92,7 +92,6 @@
                         placeholder="Enter Password"
                         id="password"
                         name="password"
-                        required
                     />
 
                     <label for="confirmPassword"><b>Confirm Password</b></label>
@@ -101,18 +100,7 @@
                         placeholder="Confirm Password"
                         id="confirmPassword"
                         name="confirmPassword"
-                        required
                     />
-
-                    <label>
-                        <input
-                            type="checkbox"
-                            checked="checked"
-                            name="remember"
-                            style="margin-bottom: 15px"
-                        />
-                        Remember me
-                    </label>
 
                     <p>
                         Already have an account?
@@ -127,7 +115,13 @@
             </form>
         </div>
         <%- include('partials/footer.ejs') %>
-        <script src="js/signup.js"></script>
+
+        <script src="/js/signup.js"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script
+            defer
+            src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"
+        ></script>
         <script
             src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=5e7ff3ec0c4ef4c974fa99e3"
             type="text/javascript"

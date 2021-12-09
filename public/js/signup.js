@@ -1,4 +1,4 @@
-const passvaluec = async (name, email, password, passwordConfirm) => {
+const passvaluexx = async (name, email, password, passwordConfirm) => {
     const hideAlert = () => {
         const el = document.querySelector(".alerts");
         if (el) {
@@ -28,7 +28,7 @@ const passvaluec = async (name, email, password, passwordConfirm) => {
         if (result.data.status === "success") {
             showAlert("success", "Successfully signed up!");
             window.setTimeout(() => {
-                location.assign("/");
+                location.assign("http://localhost:8000/");
             }, 1000);
         }
     } catch (err) {
@@ -44,5 +44,5 @@ document.getElementById("signupForm").addEventListener("submit", (e) => {
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
     const passwordConfirm = document.getElementById("confirmPassword").value;
-    passvaluec(name, email, password, passwordConfirm);
+    passvaluexx(name, email, password, passwordConfirm);
 });

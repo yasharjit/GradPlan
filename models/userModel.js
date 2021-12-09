@@ -8,14 +8,14 @@ const userSchema = mongoose.Schema(
     {
         name: {
             type: String,
-            required: [true, "Please tell us your name"],
+            // required: [true, "Please tell us your name"],
         },
         email: {
             type: String,
             unique: true,
             lowercase: true,
-            required: [true, "Enter email"],
-            validate: [validator.isEmail, "Please enter a valid email"],
+            // required: [true, "Enter email"],
+            // validate: [validator.isEmail, "Please enter a valid email"],
         },
         //photo: String,
         role: {
@@ -31,13 +31,13 @@ const userSchema = mongoose.Schema(
         },
         password: {
             type: String,
-            required: [true, "Enter Password"],
+            // required: [true, "Enter Password"],
             minlength: 8,
             select: false,
         },
         passwordConfirm: {
             type: String,
-            required: [true, "Confirm Password"],
+            // required: [true, "Confirm Password"],
             validate: {
                 validator: function (el) {
                     return el === this.password;

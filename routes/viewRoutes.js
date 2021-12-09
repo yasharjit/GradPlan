@@ -104,4 +104,16 @@ router.get(
     })
 );
 
+router.get("/teamFormation", (req, res) => {
+    return res.render("teamFormation", {
+        title: "Team Formation",
+    });
+});
+
+router.get("/inviteList", (req, res) => {
+    return res.render("inviteList", {
+        title: "Invite List",
+    });
+});
+
 module.exports = router;

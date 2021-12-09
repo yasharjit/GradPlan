@@ -373,34 +373,49 @@ const PythonRoadmap = [
 
 const GameDevRoadmap = [
     {
-        skill: "frontend",
+        skill: "game",
         lvl: "beginner",
-        path: "hello1"
+        path: "https://www.udemy.com/topic/game-development/"
     },
     {
-        skill: "frontend",
-        lvl: "intermediate",
-        path: "hello2"
-    },
-    {
-        skill: "frontend",
-        lvl: "advanced",
-        path: "hello3"
-    },
-    {
-        skill: "backend",
+        skill: "game",
         lvl: "beginner",
-        path: "hello4"
+        path: "https://www.udemy.com/topic/3d-game-development/"
     },
     {
-        skill: "backend",
-        lvl: "intermediate",
-        path: "hello5"
+        skill: "game",
+        lvl: "beginner",
+        path: "https://www.udemy.com/topic/unreal-engine/"
     },
     {
-        skill: "backend",
+        skill: "game",
         lvl: "advanced",
-        path: "hello6"
+        path: "https://www.udemy.com/topic/game-design/"
+    },
+    {
+        skill: "game",
+        lvl: "advanced",
+        path: "https://www.udemy.com/topic/3d-modeling/"
+    },
+    {
+        skill: "game",
+        lvl: "advanced",
+        path: "https://www.udemy.com/topic/2d-game-development/"
+    },
+    {
+        skill: "game",
+        lvl: "advanced",
+        path: "https://www.udemy.com/topic/blender/"
+    },
+    {
+        skill: "game",
+        lvl: "advanced",
+        path: "https://www.udemy.com/topic/c-sharp/"
+    },
+    {
+        skill: "game",
+        lvl: "advanced",
+        path: "https://www.udemy.com/topic/3d-animation/"
     }
 ];
 

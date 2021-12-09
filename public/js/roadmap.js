@@ -211,34 +211,49 @@ const AppDevRoadmap = [
 
 const MLRoadmap = [
     {
-        skill: "frontend",
+        skill: "ml",
         lvl: "beginner",
-        path: "hello1"
+        path: "https://www.youtube.com/watch?v=NWONeJKn6kc"
     },
     {
-        skill: "frontend",
-        lvl: "intermediate",
-        path: "hello2"
-    },
-    {
-        skill: "frontend",
-        lvl: "advanced",
-        path: "hello3"
-    },
-    {
-        skill: "backend",
+        skill: "ml",
         lvl: "beginner",
-        path: "hello4"
+        path: "https://www.coursera.org/learn/machine-learning"
     },
     {
-        skill: "backend",
-        lvl: "intermediate",
-        path: "hello5"
+        skill: "ml",
+        lvl: "beginner",
+        path: "https://www.udacity.com/course/intro-to-machine-learning--ud120"
     },
     {
-        skill: "backend",
+        skill: "ml",
+        lvl: "beginner",
+        path: "https://developers.google.com/machine-learning/crash-course/ml-intro"
+    },
+    {
+        skill: "ml",
         lvl: "advanced",
-        path: "hello6"
+        path: "https://www.youtube.com/watch?v=eq7KF7JTinU&ab_channel=Simplilearn"
+    },
+    {
+        skill: "ml",
+        lvl: "advanced",
+        path: "https://www.coursera.org/specializations/aml"
+    },
+    {
+        skill: "ml",
+        lvl: "advanced",
+        path: "https://www.edx.org/course/advanced-machine-learning"
+    },
+    {
+        skill: "ml",
+        lvl: "advanced",
+        path: "https://www.tensorflow.org/resources/learn-ml/theoretical-and-advanced-machine-learning"
+    },
+    {
+        skill: "ml",
+        lvl: "advanced",
+        path: "https://www.udemy.com/course/machinelearning/"
     }
 ];
 

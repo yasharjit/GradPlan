@@ -23,6 +23,9 @@ const userSchema = mongoose.Schema(
             enum: ["user", "admin"],
             default: "user",
         },
+        skills: {
+            type: Array,
+        },
         phoneNo: {
             type: Number,
         },
@@ -64,6 +67,12 @@ const userSchema = mongoose.Schema(
         timestamps: true,
     }
 );
+
+// userSchema.virtual("", {
+//     ref: "LikedDeal",
+//     foreignField: "user",
+//     localField: "_id",
+//   });
 
 userSchema.pre("save", async function (next) {
     if (!this.isModified("password")) return next();

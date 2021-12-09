@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title><%= title %></title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link
             rel="stylesheet"
@@ -19,40 +18,40 @@
             sizes="16x16"
         />
         <style>
-            .flex-container{
+            .flex-container {
                 display: flex;
                 flex-direction: column;
-                justify-content: space-around; 
+                justify-content: space-around;
             }
-            .item{
+            .item {
                 margin: 10% 0% 0% 0%;
-                width: 22%; 
-                height: 18.5rem; 
-                margin-left:68%;
-                margin-top:1%; 
+                width: 22%;
+                height: 18.5rem;
+                margin-left: 68%;
+                margin-top: 1%;
                 border: 0px solid lightgray;
                 background-color: #f3f2f2;
                 border-radius: 15px;
                 padding: 10px;
             }
-            .heading-style{
+            .heading-style {
                 font-size: 15px;
                 padding: 2%;
             }
-            .recommend-style{
+            .recommend-style {
                 right: -19px;
                 top: 16px;
-                background-color: #FF8C00;
+                background-color: #ff8c00;
                 font-size: 15px;
                 padding: 4px 4px;
                 width: 120px;
                 margin-left: 61%;
                 border-radius: 15px;
             }
-            .recommend-style:hover{
+            .recommend-style:hover {
                 transform: scale(1.2);
             }
-            span{
+            span {
                 margin-top: -2%;
                 transform: rotate(45deg);
             }
@@ -64,75 +63,76 @@
         </script> -->
     </head>
     <body>
-
         <%- include('partials/navbar.ejs') %>
-        <div class = "flex-container">
-            <h5 style="font-size: 20px;margin-left: 66%;background-color: #ffc59b;padding: 0.5%;
-            border-radius: 15px;width: 25%;text-align: center; font-weight: 499;"> Recommended Projects For You! </h5>
-            <div class = "item">
-                <h6 class = "heading-style">Project Name:</h6> 
-                <h6 class = "heading-style">Project Categroy:</h6> 
-                <h6 class = "heading-style">Project Description:</h6> 
+        <div class="flex-container">
+            <h5
+                style="
+                    font-size: 20px;
+                    margin-left: 66%;
+                    background-color: #ffc59b;
+                    padding: 0.5%;
+                    border-radius: 15px;
+                    width: 25%;
+                    text-align: center;
+                    font-weight: 499;
+                "
+            >
+                Recommended Projects For You!
+            </h5>
+            <div class="item">
+                <h6 class="heading-style">Project Name:</h6>
+                <h6 class="heading-style">Project Categroy:</h6>
+                <h6 class="heading-style">Project Description:</h6>
             </div>
 
-            <div class = "item">
-                <h6 class = "heading-style">Project Name:</h6> 
-                <h6 class = "heading-style">Project Categroy:</h6> 
-                <h6 class = "heading-style">Project Description:</h6> 
+            <div class="item">
+                <h6 class="heading-style">Project Name:</h6>
+                <h6 class="heading-style">Project Categroy:</h6>
+                <h6 class="heading-style">Project Description:</h6>
             </div>
-            
-            <div class = "item">
-                <h6 class = "heading-style">Project Name:</h6> 
-                <h6 class = "heading-style">Project Categroy:</h6> 
-                <h6 class = "heading-style">Project Description:</h6> 
+
+            <div class="item">
+                <h6 class="heading-style">Project Name:</h6>
+                <h6 class="heading-style">Project Categroy:</h6>
+                <h6 class="heading-style">Project Description:</h6>
             </div>
         </div>
-        
+
         <section id="services" class="services section-bg">
             <div class="container-fluid">
                 <div class="col-sm-12 text-center mb-4"></div>
                 <div class="row row-sm">
                     <div class="col-md-6" style="margin-left: 11%">
-                        <div class="_product-detail-content" style="margin-top:-88%;">
+                        <div
+                            class="_product-detail-content"
+                            style="margin-top: -88%"
+                        >
                             <center>
                                 <p class="_p-name">
-                                    GradPlan - One stop shop for everything
-                                    academic
+                                    <%= project.projectName %>
                                 </p>
                             </center>
                             <div class="_p-price-box">
                                 <div class="_p-features">
                                     <ul>
-                                        <li>Project Duration:</li>
-                                        <br />
-                                        <p>6 Months</p>
+                                        <!-- <li>Project Duration:</li> -->
+                                        <!-- <br /> -->
+                                        <!-- <p><%= project.duration %></p> -->
                                         <li>Project Category:</li>
                                         <br />
-                                        <p>Web Development</p>
+                                        <p><%= project.category %></p>
                                         <li>Project Description:</li>
                                         <br />
-                                        <p>
-                                            Lorem ipsum dolor sit amet
-                                            consectetur adipisicing elit.
-                                            Laborum eaque nesciunt, tempora
-                                            totam temporibus delectus iusto
-                                            cumque beatae exercitationem.
-                                            Numquam ut pariatur consectetur ea
-                                            accusantium dignissimos, qui
-                                            veritatis enim voluptates!
-                                        </p>
+                                        <p><%= project.description %></p>
                                         <li>Experience:</li>
                                         <br />
-                                        <p>No Experience Required</p>
-                                        <li>Apply by date:</li>
+                                        <p><%= project.experience %></p>
+                                        <!-- <li>Apply by date:</li>
                                         <br />
-                                        <p>10th June, 2021</p>
+                                        <p>10th June, 2021</p> -->
                                         <li>Skills Required:</li>
                                         <br />
-                                        <p>
-                                            HTML, CSS, JS, NodeJS (Express
-                                            Framework)
-                                        </p>
+                                        <p><%= project.skillsNeeded %></p>
                                     </ul>
                                 </div>
                                 <br />
@@ -147,10 +147,11 @@
                                             <button
                                                 type="submit"
                                                 onclick="change()"
-                                                id = "myButton"
-                                                class = "btn-theme btn buy-btn"
+                                                id="myButton"
+                                                class="btn-theme btn buy-btn"
                                                 tabindex="0"
-                                                style="margin-left: 40%">
+                                                style="margin-left: 40%"
+                                            >
                                                 <i
                                                     class="fa fa-paper-plane"
                                                 ></i>
@@ -179,15 +180,14 @@
                     </div>
                 </div>
             </div>
-            
         </section>
-        
+
         <%- include('partials/footer.ejs') %>
         <script>
-            function change(){
+            function change() {
                 let text = document.getElementById("myButton");
-                text.innerHTML="Applied";
-                text.style.backgroundColor="blue";
+                text.innerHTML = "Applied";
+                text.style.backgroundColor = "blue";
             }
         </script>
     </body>

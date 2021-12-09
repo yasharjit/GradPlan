@@ -1,42 +1,55 @@
 const mongoose = require("mongoose");
 
-const projectSchema = mongoose.Schema({
-    projectName: {
-        type: String,
+const projectSchema = mongoose.Schema(
+    {
+        projectName: {
+            type: String,
+        },
+        createdAt: {
+            type: Number,
+            default: Date.now(),
+        },
+        description: {
+            type: String,
+        },
+        category: {
+            type: String,
+        },
+        skillsNeeded: {
+            type: String,
+        },
+        experience: {
+            type: String,
+        },
+        ratingsAverage: {
+            type: Number,
+            default: 4.5,
+            min: [1, "Rating must be above 1.0"],
+            max: [5, "Rating must be below 5.0"],
+            set: (val) => Math.round(val * 10) / 10, // 4.666666, 46.6666, 47, 4.7
+        },
+        ratingsQuantity: {
+            type: Number,
+            default: 0,
+        },
+        user: {
+            type: mongoose.Schema.ObjectId,
+            ref: "User",
+            default: "61b1dcadfaf70a0f8c840765",
+            //required: true,
+        },
     },
-    createdAt: {
-        type: Number,
-        default: Date.now(),
-    },
-    description: {
-        type: String,
-    },
-    category: {
-        type: String,
-    },
-    skillsNeeded: {
-        type: String,
-    },
-    experience: {
-        type: String,
-    },
-    ratingsAverage: {
-        type: Number,
-        default: 4.5,
-        min: [1, "Rating must be above 1.0"],
-        max: [5, "Rating must be below 5.0"],
-        set: (val) => Math.round(val * 10) / 10, // 4.666666, 46.6666, 47, 4.7
-    },
-    ratingsQuantity: {
-        type: Number,
-        default: 0,
-    },
-    user: {
-        type: mongoose.Schema.ObjectId,
-        ref: "User",
-        //required: true,
-    },
-});
+    { toJSON: { virtuals: true }, toObject: { virtuals: true } }
+);
+
+// projectSchema.pre(/^find/, function (next) {
+//     this.populate({
+//         path: "user",
+//         // select: 'name'
+//     });
+
+//     next();
+// });
 
 projectSchema.index({ ratingsAverage: -1 });
 

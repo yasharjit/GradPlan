@@ -85,9 +85,9 @@ router.get(
     "/project/:id/postedBy/:userid",
     catchAsync(async function (req, res) {
         const poster = await User.findById(req.params.userid);
-        const project = await Deal.findById(req.params.id);
+        const project = await Project.findById(req.params.id);
         const user = await User.findById(req.logged);
-        res.render("projectCatalogPage", { project, user, poster });
+        res.render("projectPage", { project, user, poster });
     })
 );
 

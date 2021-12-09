@@ -158,34 +158,54 @@ const FullStackRoadmap = [
 
 const AppDevRoadmap = [
     {
-        skill: "frontend",
+        skill: "appdev",
         lvl: "beginner",
-        path: "hello1"
+        path: "https://www.youtube.com/watch?v=svQOxQde0bg"
     },
     {
-        skill: "frontend",
-        lvl: "intermediate",
-        path: "hello2"
-    },
-    {
-        skill: "frontend",
-        lvl: "advanced",
-        path: "hello3"
-    },
-    {
-        skill: "backend",
+        skill: "appdev",
         lvl: "beginner",
-        path: "hello4"
+        path: "https://www.udemy.com/course/androidcourse/?utm_source=adwords&utm_medium=udemyads&utm_campaign=AndroidDevelopment_v.PROF_la.EN_cc.INDIA_ti.4470&utm_content=deal4584&utm_term=_._ag_129393691807_._ad_538375673032_._kw__._de_c_._dm__._pl__._ti_dsa-1035205633356_._li_9301805_._pd__._&matchtype=&gclid=CjwKCAiAhreNBhAYEiwAFGGKPAjC8EirW2wyjVczgDht8BSUbdMXfDafPH50V_dMWbNJnFGLdGkJiRoCfecQAvD_BwE"
     },
     {
-        skill: "backend",
-        lvl: "intermediate",
-        path: "hello5"
+        skill: "appdev",
+        lvl: "beginner",
+        path: "https://www.codecademy.com/learn/paths/introduction-to-android-with-java"
     },
     {
-        skill: "backend",
+        skill: "appdev",
+        lvl: "beginner",
+        path: "https://www.coursera.org/specializations/android-app-development"
+    },
+    {
+        skill: "appdev",
+        lvl: "beginner",
+        path: "https://www.geeksforgeeks.org/how-to-build-a-simple-calculator-app-using-android-studio/"
+    },
+    {
+        skill: "appdev",
         lvl: "advanced",
-        path: "hello6"
+        path: "https://www.youtube.com/watch?v=aS__9RbCyHg"
+    },
+    {
+        skill: "appdev",
+        lvl: "advanced",
+        path: "https://www.udacity.com/course/advanced-android-app-development--ud855"
+    },
+    {
+        skill: "appdev",
+        lvl: "advanced",
+        path: "https://www.coursera.org/specializations/advanced-app-android"
+    },
+    {
+        skill: "appdev",
+        lvl: "advanced",
+        path: "https://www.udemy.com/course/flutter-bootcamp-with-dart/?utm_source=adwords&utm_medium=udemyads&utm_campaign=GoogleFlutter_v.PROF_la.EN_cc.INDIA&utm_content=deal4584&utm_term=_._ag_113517924610_._ad_533221076306_._kw_flutter+course_._de_c_._dm__._pl__._ti_kwd-466597275835_._li_9301805_._pd__._&matchtype=p&gclid=CjwKCAiAhreNBhAYEiwAFGGKPBKpe6s-wmV4mxDn5iLhjOGYlYuKmfzgJi_mV4v4lW_l4whFr3oqhhoCUPQQAvD_BwE"
+    },
+    {
+        skill: "appdev",
+        lvl: "advanced",
+        path: "https://www.geeksforgeeks.org/how-to-build-a-tic-tac-toe-game-with-both-offline-and-online-mode-in-android/"
     }
 ];
 

@@ -54,32 +54,47 @@ const BackendRoadmap = [
     {
         skill: "backend",
         lvl: "beginner",
-        path: "hello1"
-    },
-    {
-        skill: "backend",
-        lvl: "intermediate",
-        path: "hello2"
-    },
-    {
-        skill: "backend",
-        lvl: "advanced",
-        path: "hello3"
+        path: "https://www.youtube.com/watch?v=uVwtVBpw7RQ&list=PLTjRvDozrdlynYXGUfyyMZdrQ0Sz27aud"
     },
     {
         skill: "backend",
         lvl: "beginner",
-        path: "hello4"
+        path: "https://www.youtube.com/watch?v=jBzwzrDvZ18&ab_channel=freeCodeCamp.org"
     },
     {
         skill: "backend",
-        lvl: "intermediate",
-        path: "hello5"
+        lvl: "beginner",
+        path: "https://www.udemy.com/course/django-python-web-development-for-beginner/"
+    },
+    {
+        skill: "backend",
+        lvl: "beginner",
+        path: "https://www.freecodecamp.org/news/backend-web-development-with-python-full-course/"
+    },
+    {
+        skill: "backend",
+        lvl: "beginner",
+        path: "https://blog.logrocket.com/how-to-build-a-web-crawler-with-node/"
     },
     {
         skill: "backend",
         lvl: "advanced",
-        path: "hello6"
+        path: "https://www.udemy.com/course/software-developer-masterclass/?utm_source=adwords&utm_medium=udemyads&utm_campaign=LongTail_la.EN_cc.INDIA&utm_content=deal4584&utm_term=_._ag_118445032537_._ad_533094112755_._kw__._de_c_._dm__._pl__._ti_dsa-1212271230479_._li_9301805_._pd__._&matchtype=&gclid=CjwKCAiAhreNBhAYEiwAFGGKPFc1xa8tzAk_5DoD3BXuugc8MoasfFh3tHJgJw5pHxSsRlfRO7Oy-xoCkfoQAvD_BwE"
+    },
+    {
+        skill: "backend",
+        lvl: "advanced",
+        path: "https://www.udemy.com/course/learning-path-mongodb-backend-programming-with-mongodb/"
+    },
+    {
+        skill: "backend",
+        lvl: "advanced",
+        path: "https://masteringbackend.com/posts/backend-development-the-ultimate-guide/"
+    },
+    {
+        skill: "backend",
+        lvl: "advanced",
+        path: "https://www.youtube.com/watch?v=f9PR1qcwOyg&ab_channel=codebasics"
     }
 ];
 

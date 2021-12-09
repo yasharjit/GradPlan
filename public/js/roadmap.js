@@ -259,34 +259,39 @@ const MLRoadmap = [
 
 const CppRoadmap = [
     {
-        skill: "frontend",
+        skill: "cpp",
         lvl: "beginner",
-        path: "hello1"
+        path: "https://online.codingblocks.com/courses/coding-interview-preparation-course-online-c-plus-plus"
     },
     {
-        skill: "frontend",
-        lvl: "intermediate",
-        path: "hello2"
-    },
-    {
-        skill: "frontend",
-        lvl: "advanced",
-        path: "hello3"
-    },
-    {
-        skill: "backend",
+        skill: "cpp",
         lvl: "beginner",
-        path: "hello4"
+        path: "https://www.udemy.com/course/cracking-cpp-interview/"
     },
     {
-        skill: "backend",
-        lvl: "intermediate",
-        path: "hello5"
+        skill: "cpp",
+        lvl: "beginner",
+        path: "https://practice.geeksforgeeks.org/courses/complete-interview-preparation"
     },
     {
-        skill: "backend",
+        skill: "cpp",
+        lvl: "beginner",
+        path: "https://www.codingninjas.com/courses/onlline-c-plus-plus-course"
+    },
+    {
+        skill: "cpp",
         lvl: "advanced",
-        path: "hello6"
+        path: "https://www.codingninjas.com/courses/onlline-c-plus-plus-course?source=google&campaign=google_search_c-plus-plus_remark_classes_21-01-20_bmm&utm_source=google&utm_medium=[search]&utm_campaign=8982874746_91422299675_p_c%2B%2B%20classes__412675896610_c&gclid=Cj0KCQiAzMGNBhCyARIsANpUkzOq9ltU6KT8so4VpSc2q4Q9fjn7uwyfML-T1zQfuzHIDe9IhduBqo4aAlpZEALw_wcB"
+    },
+    {
+        skill: "cpp",
+        lvl: "advanced",
+        path: "https://www.udemy.com/course/pass-your-coding-interview-efficiently-with-cpp/?utm_source=adwords&utm_medium=udemyads&utm_campaign=Coding_v.PROF_la.EN_cc.INDIA_ti.NA&utm_content=deal4584&utm_term=_._ag_126605177718_._ad_538448593847_._kw__._de_c_._dm__._pl__._ti_dsa-1395243511086_._li_9300790_._pd__._&matchtype=&gclid=Cj0KCQiAzMGNBhCyARIsANpUkzOXqm72nyiuNupQ89DEsSSy1WPm6GOmUzxZysX2tItdfuP62-q7t1saAiFsEALw_wcB"
+    },
+    {
+        skill: "cpp",
+        lvl: "advanced",
+        path: "https://practice.geeksforgeeks.org/courses/cpp-stl?source=google&medium=cpc&device=c&keyword=c%2B%2B&matchtype=b&campaignid=7137967802&adgroup=107592854344&gclid=Cj0KCQiAzMGNBhCyARIsANpUkzPr1fGZBobOLcVYundv-fBHyRPxUGc8Qqx7xMvIdvghQ2bFaB9uK74aAtlZEALw_wcB"
     }
 ];
 

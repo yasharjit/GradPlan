@@ -340,34 +340,34 @@ const JavaRoadmap = [
 
 const PythonRoadmap = [
     {
-        skill: "frontend",
+        skill: "python",
         lvl: "beginner",
-        path: "hello1"
+        path: "https://www.udemy.com/course/python-programming-projects/?gclid=Cj0KCQiAzMGNBhCyARIsANpUkzNtdq94O5HMs2RrQpCZA-G238xDLtfXI-umJHaaa9pWbQ5wPMqucuUaAgkVEALw_wcB&matchtype=e&utm_campaign=Python_v.PROF_la.EN_cc.INDIA_ti.7380&utm_content=deal4584&utm_medium=udemyads&utm_source=adwords&utm_term=_._ag_78980845626_._ad_533094103161_._kw_python+course+for+beginners_._de_c_._dm__._pl__._ti_aud-669140681723%3Akwd-296691733656_._li_9300790_._pd__._"
     },
     {
-        skill: "frontend",
-        lvl: "intermediate",
-        path: "hello2"
-    },
-    {
-        skill: "frontend",
-        lvl: "advanced",
-        path: "hello3"
-    },
-    {
-        skill: "backend",
+        skill: "python",
         lvl: "beginner",
-        path: "hello4"
+        path: "https://www.coursera.org/courses?query=python%20for%20beginners"
     },
     {
-        skill: "backend",
-        lvl: "intermediate",
-        path: "hello5"
+        skill: "python",
+        lvl: "beginner",
+        path: "https://www.edx.org/learn/python"
     },
     {
-        skill: "backend",
+        skill: "python",
+        lvl: "beginner",
+        path: "https://www.freecodecamp.org/news/python-projects-for-beginners/"
+    },
+    {
+        skill: "python",
         lvl: "advanced",
-        path: "hello6"
+        path: "https://www.udemy.com/course/python-the-complete-python-developer-course/?gclid=Cj0KCQiAzMGNBhCyARIsANpUkzNsNEgME7ZwIchljgGxVNel9iZku2skicurQIxMDxfttYFQAxOADeoaAhT_EALw_wcB&matchtype=e&utm_campaign=Python_v.PROF_la.EN_cc.INDIA_ti.7380&utm_content=deal4584&utm_medium=udemyads&utm_source=adwords&utm_term=_._ag_78980845666_._ad_533094103164_._kw_advanced+python+course_._de_c_._dm__._pl__._ti_aud-669140681723%3Akwd-63466433605_._li_9300790_._pd__._"
+    },
+    {
+        skill: "python",
+        lvl: "advanced",
+        path: "https://www.coursera.org/courses?query=advanced%20python"
     }
 ];
 

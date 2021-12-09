@@ -100,34 +100,59 @@ const BackendRoadmap = [
 
 const FullStackRoadmap = [
     {
-        skill: "frontend",
+        skill: "fullstack",
         lvl: "beginner",
-        path: "hello1"
+        path: "https://www.youtube.com/watch?v=l1EssrLxt7E&list=PLfqMhTWNBTe3H6c9OGXb5_6wcc1Mca52n"
     },
     {
-        skill: "frontend",
-        lvl: "intermediate",
-        path: "hello2"
-    },
-    {
-        skill: "frontend",
-        lvl: "advanced",
-        path: "hello3"
-    },
-    {
-        skill: "backend",
+        skill: "fullstack",
         lvl: "beginner",
-        path: "hello4"
+        path: "https://www.youtube.com/watch?v=MSF-AfLfqzw"
     },
     {
-        skill: "backend",
-        lvl: "intermediate",
-        path: "hello5"
+        skill: "fullstack",
+        lvl: "beginner",
+        path: "https://www.codingninjas.com/courses/online-full-stack-node-js-web-dev-course?utm_source=google&utm_medium=[search]&utm_campaign=13445619501_123527248059_p_full%20stack%20web%20development__531107606326_c&gclid=CjwKCAiAhreNBhAYEiwAFGGKPBJ0qAvqMVgITrLO05s4k6oRJrn46Z2tRGO9MEvwq-1hhOZBI8ynBBoCiuQQAvD_BwE"
     },
     {
-        skill: "backend",
+        skill: "fullstack",
+        lvl: "beginner",
+        path: "https://www.udemy.com/course/ultimate-web/?utm_source=adwords&utm_medium=udemyads&utm_campaign=LongTail_la.EN_cc.INDIA&utm_content=deal4584&utm_term=_._ag_77882236463_._ad_533093955810_._kw__._de_c_._dm__._pl__._ti_dsa-1007766171312_._li_9301805_._pd__._&matchtype=&gclid=CjwKCAiAhreNBhAYEiwAFGGKPBibZ6DNmYIYx3qwTeiHpwvEajglywvTeZPg9cxFdlNkE6pVpDYLnhoC-jsQAvD_BwE"
+    },
+    {
+        skill: "fullstack",
+        lvl: "beginner",
+        path: "https://www.crio.do/projects/javascript-codechef-notifier/"
+    },
+    {
+        skill: "fullstack",
         lvl: "advanced",
-        path: "hello6"
+        path: "https://www.youtube.com/watch?v=alC4o-91eeY"
+    },
+    {
+        skill: "fullstack",
+        lvl: "advanced",
+        path: "https://www.udemy.com/course/fullstackwebdeveloper/"
+    },
+    {
+        skill: "fullstack",
+        lvl: "advanced",
+        path: "https://www.w3schools.com/whatis/whatis_fullstack.asp"
+    },
+    {
+        skill: "fullstack",
+        lvl: "advanced",
+        path: "https://online.codingblocks.com/courses/web-development-online-course"
+    },
+    {
+        skill: "fullstack",
+        lvl: "advanced",
+        path: "https://www.crio.do/projects/javascript-socail-media-nodejs/"
+    },
+    {
+        skill: "fullstack",
+        lvl: "advanced",
+        path: "https://www.youtube.com/watch?v=Fy9SdZLBTOo&ab_channel=CodingwithBasir"
     }
 ];
 

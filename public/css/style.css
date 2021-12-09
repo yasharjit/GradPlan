@@ -4589,10 +4589,6 @@ ul {
 * {
   box-sizing: border-box; }
 
-body {
-  background: #edf0f5;
-  font-family: 'Open Sans', sans-serif; }
-
 .panel {
   width: 320px;
   margin: 4rem auto;

@@ -3,7 +3,7 @@
     <head>
         <title><%= project.projectName %></title>
         <link
-            href="public/images/favicon.png"
+            href="../public/images/favicon.png"
             rel="icon"
             type="image/gif"
             sizes="16x16"
@@ -18,12 +18,6 @@
             href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
         />
         <!-- <link rel="stylesheet" href="../public/css/style.css" /> -->
-        <link
-            href="public/images/favicon.png"
-            rel="icon"
-            type="image/gif"
-            sizes="16x16"
-        />
         <style>
             .flex-container {
                 display: flex;
@@ -71,6 +65,17 @@
     </head>
     <body>
         <%- include('partials/navbar.ejs') %>
+        <!-- <div class = "navbar-for-project-page" style="width: 30%; height: auto;">
+            <a
+                href="/"
+                aria-current="page"
+                class="brand w-nav-brand w--current"
+                ><img
+                    src="../public/images/logo.png"
+                    alt=""
+            /></a>
+            <%- include('./partials/searchbar.ejs') %>
+        </div> -->
         <div class="flex-container">
             <h5
                 style="
@@ -130,7 +135,7 @@
                             <div class="_p-price-box"style="
                             padding-right:15px;padding-left:15px;
                             width: 80%;
-                            height: 40rem;
+                            height: 55rem;
                             margin-left: 8%;
                             margin-top: 7%;
                             
@@ -226,13 +231,7 @@
             </div>
         </section>
 
-        <script>
-            function change() {
-                let text = document.getElementById("myButton");
-                text.innerHTML = "Applied";
-                text.style.backgroundColor = "blue";
-            }
-        </script>
         <%- include('partials/footer.ejs') %>
+
     </body>
 </html>

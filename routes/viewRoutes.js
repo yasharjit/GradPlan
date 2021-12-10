@@ -39,8 +39,8 @@ router.get("/createProject", (req, res) => {
     });
 });
 
-router.get("/projectPage", (req, res) => {
-    return res.render("projectPage", {
+router.get("/projectPageDetails", (req, res) => {
+    return res.render("projectPageDetails", {
         title: "Project details",
     });
 });
@@ -92,7 +92,7 @@ router.get(
         const poster = await User.findById(req.params.userid);
         const project = await Project.findById(req.params.id);
         const user = await User.findById(req.logged);
-        res.render("projectPage", { project, user, poster });
+        res.render("projectPageDetails", { project, user, poster });
     })
 );
 

@@ -109,4 +109,12 @@ router.get(
     })
 );
 
+router.get("/teamMembersPage", (req, res) => {
+    return res.render("teamMembersPage", {
+        title: "Team Members",
+    });
+});
+
+
+
 module.exports = router;

@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title><%= title %> </title>
+        <title><%= title %></title>
         <style>
             :root {
                 --bgColor: #1c2329;
@@ -82,73 +82,73 @@
                 border-bottom-left-radius: 30px;
             }
             #infographic :nth-child(even) article header i {
-            margin: -17px 85% -25px 86%;
+                margin: -17px 85% -25px 86%;
             }
             #infographic article[data-step="1"] {
-            margin-left: 20px;
+                margin-left: 20px;
             }
             #infographic article[data-step="2"] {
-            margin-left: 50px;
+                margin-left: 50px;
             }
             #infographic article[data-step="3"] {
-            margin-left: 46px;
+                margin-left: 46px;
             }
             #infographic article[data-step="4"] {
-            margin-left: 0;
+                margin-left: 0;
             }
             #infographic article[data-step="5"] {
-            margin-left: -60px;
+                margin-left: -60px;
             }
             #infographic article[data-step="6"] {
-            margin-left: -40px;
+                margin-left: -40px;
             }
             #infographic article[data-step="7"] {
-            margin-left: -70px;
+                margin-left: -70px;
             }
             #infographic article[data-step="8"] {
-            margin-left: -60px;
+                margin-left: -60px;
             }
             #infographic article[data-step="9"] {
-            margin-left: 0;
+                margin-left: 0;
             }
             #infographic article[data-step="10"] {
-            margin-left: 70px;
+                margin-left: 70px;
             }
             #infographic article[data-step="11"] {
-            margin-left: 60px;
+                margin-left: 60px;
             }
             #infographic article[data-step="12"] {
-            margin-left: 100px;
+                margin-left: 100px;
             }
             #infographic article[data-step="13"] {
-            margin-left: 80px;
+                margin-left: 80px;
             }
             #infographic article[data-step="14"] {
-            margin-left: 30px;
+                margin-left: 30px;
             }
             #infographic article[data-step="15"] {
-            margin-left: -50px;
+                margin-left: -50px;
             }
             #infographic article[data-step="16"] {
-            margin-left: -250px;
+                margin-left: -250px;
             }
             #infographic .one article header {
-            background-color: rgba(37, 59, 143, 0.3);
-            color: #8f2543;
+                background-color: rgba(37, 59, 143, 0.3);
+                color: #8f2543;
             }
             #infographic .one article header i {
-            background-color: #007bff;
+                background-color: #007bff;
             }
             #infographic .two article header {
-            background-color: rgba(0, 108, 99, 0.1);
-            color: #006c63;
+                background-color: rgba(0, 108, 99, 0.1);
+                color: #006c63;
             }
             #infographic .two article header i {
-            background-color: #28a745;
+                background-color: #28a745;
             }
             #infographic .three article header {
-            background-color: rgba(69, 80, 162, 0.1);
-            color: #dc3545;
+                background-color: rgba(69, 80, 162, 0.1);
+                color: #dc3545;
             }
             #infographic .three article header i {
                 background-color: #dc3545;
@@ -171,108 +171,187 @@
             #infographic .two article.active header {
                 border-bottom-left-radius: 0;
             }
-            .h6-style{
-               text-align: center;
-
+            .h6-style {
+                text-align: center;
             }
-            .img-style{
-               margin-left:7%;
+            .img-style {
+                margin-left: 7%;
             }
         </style>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
     </head>
     <body>
         <%- include('partials/navbar.ejs') %>
-        <div class="d-flex justify-content-center align-items-center flex-column">
-            <h1 style="color: #de0034;
-                font-family: Sen, sans-serif;
-                font-size: 35px;
-                font-weight: 300;
-                line-height: 58px;
-                margin: 2% 0% 6% 37%;">
+        <div
+            class="d-flex justify-content-center align-items-center flex-column"
+        >
+            <h1
+                style="
+                    color: #de0034;
+                    font-family: Sen, sans-serif;
+                    font-size: 35px;
+                    font-weight: 300;
+                    line-height: 58px;
+                    margin: 2% 0% 6% 37%;
+                "
+            >
                 <!-- Infographic Roadmap -->
             </h1>
-         </div>
-         
-         <div id="infographic" class="d-flex flex-column align-items-center py-5">
-            <div class="step one text-primary" style="margin-top: -4%;">
-               <div class="circle">
-                  <img src="../public/images/meteor.png" style="margin-left: 10%;">
-                  <h4 style="color: #006c63;" >STEP 1<br />Ready for this?</h4>
-               </div>
-               <article data-step="1">
-                  <header class="d-flex align-items-center text-primary">
-                     <i class="fas fa-meteor"></i>
-                     <h6 class = "h6-style">Lorem Ipsum dolor sit Amet</h6>
-                  </header>
-         
-                  <div class="body">
-                     <small> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </small>
-         
-                     <div class="d-flex justify-content-between mt-3 controls">
-                        <a> </a>
-                        <a class="btn btn-outline-primary" href="#">Next</a>
-                     </div>
-                  </div>
-               </article>
-               <article data-step="2">
-                  <header class="d-flex align-items-center text-primary">
-                     <i class="fas fa-meteor"></i>
-                     <h6 class = "h6-style">Lorem Ipsum dolor sit Amet</h6>
-                  </header>
-         
-                  <div class="body">
-                     <small> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </small>
-                     <div class="d-flex justify-content-between mt-3 controls">
-                        <a class="btn btn-outline-primary" href="#">Prev</a>
-                        <a class="btn btn-outline-primary" href="#">Next</a>
-                     </div>
-                  </div>
-               </article>
-               <article data-step="3">
-                  <header class="d-flex align-items-center text-primary">
-                     <i class="fas fa-meteor"></i>
-                     <h6 class = "h6-style">Lorem Ipsum dolor sit Amet</h6>
-                  </header>
-         
-                  <div class="body">
-                     <small> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </small>
-                     <div class="d-flex justify-content-between mt-3 controls">
-                        <a class="btn btn-outline-primary" href="#">Prev</a>
-                        <a class="btn btn-outline-primary" href="#">Next</a>
-                     </div>
-                  </div>
-               </article>
-               <article data-step="4">
-                  <header class="d-flex align-items-center text-primary">
-                     <i class="fas fa-meteor"></i>
-                     <h6 class = "h6-style">Lorem Ipsum dolor sit Amet</h6>
-                  </header>
-         
-                  <div class="body">
-                     <small> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </small>
-                     <div class="d-flex justify-content-between mt-3 controls">
-                        <a class="btn btn-outline-primary" href="#">Prev</a>
-                        <a class="btn btn-outline-primary" href="#">Next</a>
-                     </div>
-                  </div>
-               </article>
-               <article data-step="5">
-                  <header class="d-flex align-items-center text-primary" style="margin-left: 5%;">
-                     <i class="fas fa-meteor"></i>
-                     <h6 class = "h6-style">Lorem Ipsum dolor sit Amet</h6>
-                  </header>
-         
-                  <div class="body">
-                     <small> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </small>
-                     <div class="d-flex justify-content-between mt-3 controls">
-                        <a class="btn btn-outline-primary" href="#">Prev</a>
-                        <a class="btn btn-outline-primary" href="#">Next</a>
-                     </div>
-                  </div>
-               </article>
+        </div>
+
+        <div
+            id="infographic"
+            class="d-flex flex-column align-items-center py-5"
+        >
+            <div class="step one text-primary" style="margin-top: -4%">
+                <div class="circle">
+                    <img
+                        src="../public/images/meteor.png"
+                        style="margin-left: 10%"
+                    />
+                    <h4 style="color: #006c63">
+                        Beginner<br />Ready for this?
+                    </h4>
+                </div>
+                <article data-step="1">
+                    <header class="d-flex align-items-center text-primary">
+                        <i class="fas fa-meteor"></i>
+                        <a
+                            href="https://www.youtube.com/watch?v=QA0XpGhiz5w&ab_channel=DesignCourse"
+                            ><h6 class="h6-style">
+                                The 2020 Frontend Crash Course
+                            </h6></a
+                        >
+                    </header>
+
+                    <div class="body">
+                        <small>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex ea commodo consequat.
+                        </small>
+
+                        <div
+                            class="d-flex justify-content-between mt-3 controls"
+                        >
+                            <a> </a>
+                            <a class="btn btn-outline-primary" href="#">Next</a>
+                        </div>
+                    </div>
+                </article>
+                <article data-step="2">
+                    <header class="d-flex align-items-center text-primary">
+                        <i class="fas fa-meteor"></i>
+                        <a
+                            href="https://www.youtube.com/watch?v=QA0XpGhiz5w&ab_channel=DesignCourse"
+                            ><h6 class="h6-style">
+                                HTML, CSS, and JS for Web Developers
+                            </h6></a
+                        >
+                    </header>
+
+                    <div class="body">
+                        <small>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex ea commodo consequat.
+                        </small>
+                        <div
+                            class="d-flex justify-content-between mt-3 controls"
+                        >
+                            <a class="btn btn-outline-primary" href="#">Prev</a>
+                            <a class="btn btn-outline-primary" href="#">Next</a>
+                        </div>
+                    </div>
+                </article>
+                <article data-step="3">
+                    <header class="d-flex align-items-center text-primary">
+                        <i class="fas fa-meteor"></i>
+                        <a href="">
+                            <h6 class="h6-style">
+                                Front End Tutorial | Simplilearn
+                            </h6></a
+                        >
+                    </header>
+
+                    <div class="body">
+                        <small>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex ea commodo consequat.
+                        </small>
+                        <div
+                            class="d-flex justify-content-between mt-3 controls"
+                        >
+                            <a class="btn btn-outline-primary" href="#">Prev</a>
+                            <a class="btn btn-outline-primary" href="#">Next</a>
+                        </div>
+                    </div>
+                </article>
+                <article data-step="4">
+                    <header class="d-flex align-items-center text-primary">
+                        <i class="fas fa-meteor"></i>
+                        <a href=""
+                            ><h6 class="h6-style">
+                                Frontend Mentor Challenge
+                            </h6></a
+                        >
+                    </header>
+
+                    <div class="body">
+                        <small>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex ea commodo consequat.
+                        </small>
+                        <div
+                            class="d-flex justify-content-between mt-3 controls"
+                        >
+                            <a class="btn btn-outline-primary" href="#">Prev</a>
+                            <a class="btn btn-outline-primary" href="#">Next</a>
+                        </div>
+                    </div>
+                </article>
+                <article data-step="5">
+                    <header
+                        class="d-flex align-items-center text-primary"
+                        style="margin-left: 5%"
+                    >
+                        <i class="fas fa-meteor"></i>
+                        <a href="">
+                            <h6 class="h6-style">Final Challenge Project</h6></a
+                        >
+                    </header>
+
+                    <div class="body">
+                        <small>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex ea commodo consequat.
+                        </small>
+                        <div
+                            class="d-flex justify-content-between mt-3 controls"
+                        >
+                            <a class="btn btn-outline-primary" href="#">Prev</a>
+                            <a class="btn btn-outline-primary" href="#">Next</a>
+                        </div>
+                    </div>
+                </article>
             </div>
-            <div class="step two text-success"style="margin-top: 3%; margin-bottom: 3%;">
+            <!-- <div class="step two text-success"style="margin-top: 3%; margin-bottom: 3%;">
                <div class="circle">
                   <img src="../public/images/cookie.png" class="img-style">
                   <h4 style="color: #006c63;">STEP 2.<br />You're doing great!</h4>
@@ -348,143 +427,44 @@
                      </div>
                   </div>
                </article>
-            </div>
-            <div class="step three text-danger">
-               <div class="circle">
-                  <img src="../public/images/dragon.png" class="img-style">
-                  <h4 style="color: #dc3545;">STEP 3.<br />Almost There!</h4>
-               </div>
-               <article data-step="11">
-                  <header class="d-flex align-items-center text-danger">
-                     <i class="fas fa-dragon"></i>
-                     <h6 class = "h6-style">Lorem Ipsum dolor sit Amet</h6>
-                  </header>
-         
-                  <div class="body">
-                     <small> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </small>
-         
-                     <div class="d-flex justify-content-between mt-3 controls">
-                        <a class="btn btn-outline-danger" href="#">Prev</a>
-                        <a class="btn btn-outline-danger" href="#">Next</a>
-                     </div>
-                  </div>
-               </article>
-               <article data-step="12">
-                  <header class="d-flex align-items-center text-danger">
-                     <i class="fas fa-dragon"></i>
-                     <h6 class = "h6-style">Lorem Ipsum dolor sit Amet</h6>
-                  </header>
-         
-                  <div class="body">
-                     <small> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </small>
-                     <div class="d-flex justify-content-between mt-3 controls">
-                        <a class="btn btn-outline-danger" href="#">Prev</a>
-                        <a class="btn btn-outline-danger" href="#">Next</a>
-                     </div>
-                  </div>
-               </article>
-               <article data-step="13">
-                  <header class="d-flex align-items-center text-danger">
-                     <i class="fas fa-dragon"></i>
-                     <h6 class = "h6-style">Lorem Ipsum dolor sit Amet</h6>
-                  </header>
-         
-                  <div class="body">
-                     <small> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </small>
-                     <div class="d-flex justify-content-between mt-3 controls">
-                        <a class="btn btn-outline-danger" href="#">Prev</a>
-                        <a class="btn btn-outline-danger" href="#">Next</a>
-                     </div>
-                  </div>
-               </article>
-               <article data-step="14">
-                  <header class="d-flex align-items-center text-danger">
-                     <i class="fas fa-dragon"></i>
-                     <h6 class = "h6-style">Lorem Ipsum dolor sit Amet</h6>
-                  </header>
-         
-                  <div class="body">
-                     <small> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </small>
-                     <div class="d-flex justify-content-between mt-3 controls">
-                        <a class="btn btn-outline-danger" href="#">Prev</a>
-                        <a class="btn btn-outline-danger" href="#">Next</a>
-                     </div>
-                  </div>
-               </article>
-               <article data-step="15">
-                  <header class="d-flex align-items-center text-danger">
-                     <i class="fas fa-dragon"></i>
-                     <h6 class = "h6-style">Lorem Ipsum dolor sit Amet</h6>
-                  </header>
-         
-                  <div class="body">
-                     <small> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </small>
-                     <div class="d-flex justify-content-between mt-3 controls">
-                        <a class="btn btn-outline-danger" href="#">Prev</a>
-                        <a class="btn btn-outline-danger" href="#">Next</a>
-                     </div>
-                  </div>
-               </article>
-               <article data-step="16">
-                  <!-- <header class="d-flex align-items-center text-danger" style="padding: 10%;">
-                     <img src="../public/images/flag.png" class="img-style" style="border-radius: 50%; width: 23%;">
-                     <i class="fas fa-flag-checkered" style="font-size: 4em; padding: 20px"></i>
-                     <h6 class = "h6-style">Lorem Ipsum dolor sit Amet</h6>
-                  </header> -->
-                  
-                  <header class="d-flex align-items-center text-danger">
-                     <center style="background-color: #fff;margin-top: 13%;">
-                        <img src="../public/images/flag.png" style="border-radius: 50%; width: 23%;">
-                        <h6 class = "h6-style">Lorem Ipsum dolor sit Amet</h6>
-                     </center>
-                     <!-- <i class="fas fa-dragon"></i> -->
-                     
-                  </header>
-                  <h6></h6>
-                  <div class="body">
-                     <small> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </small>
-                     <div class="d-flex justify-content-between mt-3 controls">
-                        <a class="btn btn-outline-danger" href="#">Prev</a>
-                     </div>
-                  </div>
-               </article>
-            </div>
-         </div>
-         <script>
-             $("#infographic article").click(function () {
-            $(this).toggleClass("active");
+            </div> -->
+        </div>
+        <script>
+            $("#infographic article").click(function () {
+                $(this).toggleClass("active");
             });
             $("#infographic article .controls .btn").on("click", function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-            var currentEl = $(this).closest("article");
-            var currentI = currentEl.data("step");
-            currentEl.removeClass("active");
-            var nextI = $(this).is(":first-child") ? currentI - 1 : currentI + 1;
-            var nextEl = $("article[data-step='" + nextI + "']");
-            nextEl.click();
-            var y = document
-                .querySelector("article[data-step='" + nextI + "'")
-                .getBoundingClientRect().top;
-            var supportsNativeSmoothScroll =
-                "scrollBehavior" in document.documentElement.style;
+                e.preventDefault();
+                e.stopPropagation();
+                var currentEl = $(this).closest("article");
+                var currentI = currentEl.data("step");
+                currentEl.removeClass("active");
+                var nextI = $(this).is(":first-child")
+                    ? currentI - 1
+                    : currentI + 1;
+                var nextEl = $("article[data-step='" + nextI + "']");
+                nextEl.click();
+                var y = document
+                    .querySelector("article[data-step='" + nextI + "'")
+                    .getBoundingClientRect().top;
+                var supportsNativeSmoothScroll =
+                    "scrollBehavior" in document.documentElement.style;
 
-            if (supportsNativeSmoothScroll) {
-                window.scrollTo({
-                    top: y + window.pageYOffset - 300,
-                    behavior: "smooth"
-                });
-            } else {
-                window.scrollTo(0, y + window.pageYOffset - 300);
-            }
+                if (supportsNativeSmoothScroll) {
+                    window.scrollTo({
+                        top: y + window.pageYOffset - 300,
+                        behavior: "smooth",
+                    });
+                } else {
+                    window.scrollTo(0, y + window.pageYOffset - 300);
+                }
             });
             $(document).mouseup(function (e) {
-            var tgt = $("#infographic article.active");
-            if (!tgt.is(e.target) && tgt.has(e.target).length === 0)
-                tgt.removeClass("active");
+                var tgt = $("#infographic article.active");
+                if (!tgt.is(e.target) && tgt.has(e.target).length === 0)
+                    tgt.removeClass("active");
             });
-
-         </script>
-         <%- include('partials/footer.ejs') %>
+        </script>
+        <%- include('partials/footer.ejs') %>
     </body>
 </html>

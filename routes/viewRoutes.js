@@ -110,10 +110,6 @@ router.get("/teamMembersPage", (req, res) => {
     });
 });
 
-router.get("/inviteList", (req, res) => {
-    return res.render("inviteList", {
-        title: "Invite List",
-    });
-});
+
 
 module.exports = router;

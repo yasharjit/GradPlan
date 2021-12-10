@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title><%= title %></title>
+    </head>
+    <body>
+        <%- include('partials/navbar.ejs') %>
+
+        <div class="container">
+            <form class="signupForm" id="signupForm" method="POST">
+                <div class="container">
+                    <center>
+                        <h1>Invite</h1>
+                        <p>Please fill in this form</p>
+                    </center>
+                    <hr />
+
+                    <label for="name"><b>Event Name</b></label>
+                    <form action="#" method="post">                              
+                        <div class="dropdown">
+                          <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">All categories
+                          <span class="caret"></span></button>
+                          <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="/#mattress_id">Mattress</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="/#cycle_id">Cycle</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="/#drafter_id">Drafter</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="/#labcoat_id">Labcoat</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="/#others_id">Others</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </form>
+
+                    <label for="email"><b>Email</b></label>
+                    <input
+                        type="text"
+                        placeholder="Enter Email"
+                        id="email"
+                        name="email"
+                    />
+
+                    <label for="password"><b>Password</b></label>
+                    <input
+                        type="password"
+                        placeholder="Enter Password"
+                        id="password"
+                        name="password"
+                    />
+
+                    <label for="skills"><b>Skillset</b></label>
+                    <input
+                        type="text"
+                        placeholder="Skills"
+                        id="skill"
+                        name="skill"
+                    />
+
+                    <div class="clearfix">
+                        <button type="submit" class="signupbtn">Sign Up</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        
+        <%- include('partials/footer.ejs') %>
+    </body>
+</html>

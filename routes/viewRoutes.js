@@ -80,6 +80,11 @@ router.get("/createRoadmap", (req, res) => {
         title: "Create Roadmap Form",
     });
 });
+router.get("/inviteForm", (req, res) => {
+    return res.render("inviteForm", {
+        title: "Invite Form",
+    });
+});
 
 router.get(
     "/project/:id/postedBy/:userid",

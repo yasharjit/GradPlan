@@ -81,23 +81,48 @@
                 Recommended Projects For You!
             </h5>
             <div class="item">
-                <h6 class="heading-style">Project Name:</h6>
-                <h6 class="heading-style">Project Description:</h6>
+                <h6 class="heading-style">Project Name:Mads libs Generator</h6>
+                <h6 class="heading-style">
+                    Project Description:One of the best ideas to start
+                    experimenting you hands-on python projects for students is
+                    working on Mad Libs Generator...
+                </h6>
             </div>
 
             <div class="item">
-                <h6 class="heading-style">Project Name:</h6>
-                <h6 class="heading-style">Project Description:</h6>
+                <h6 class="heading-style">
+                    Project Name:Text Based Adventure Game
+                </h6>
+                <h6 class="heading-style">
+                    Project Description:This is a basic version of the Adventure
+                    game. It is completely text-based. In this version of the
+                    game, users can move about through different rooms within a
+                    single setting, .....
+                </h6>
             </div>
 
             <div class="item">
-                <h6 class="heading-style">Project Name:</h6>
-                <h6 class="heading-style">Project Description:</h6>
+                <h6 class="heading-style">Project Name:Number Guessing</h6>
+                <h6 class="heading-style">
+                    Project Description:This is one of the simple python
+                    projects yet an exciting one. You can...
+                </h6>
             </div>
         </div>
 
-        <section id="services" class="services section-bg">
-            <div class="container-fluid">
+        <section id="services" class="services section-bg"style="
+            
+        width: 50%;
+        height: 100rem;
+        margin-left: 1%;
+        margin-top: 1%;
+        
+        border: 0px solid lightgray;
+        background-color: #f3f2f2;
+        border-radius: 15px;
+        padding: 10px;">
+            <div class="container-fluid"
+            >
                 <div class="col-sm-12 text-center mb-4"></div>
                 <div class="row row-sm">
                     <div class="col-md-6" style="margin-left: 11%">
@@ -110,27 +135,36 @@
                                     <%= project.projectName %>
                                 </p>
                             </center>
-                            <div class="_p-price-box">
+                            <div class="_p-price-box"style="padding-right:15px;padding-left:15px;">
                                 <div class="_p-features">
                                     <ul>
                                         <!-- <li>Project Duration:</li> -->
                                         <!-- <br /> -->
                                         <!-- <p><%= project.duration %></p> -->
-                                        <li>Project Category:</li>
-                                        <br />
-                                        <p><%= project.category %></p>
-                                        <li>Project Description:</li>
-                                        <br />
-                                        <p><%= project.description %></p>
-                                        <li>Experience:</li>
-                                        <br />
-                                        <p><%= project.experience %></p>
+                                        <li>Project Category:
+                                        
+                                        <%= project.category %></p></li>
+                                        <li>
+                                            <p>
+                                                Project Description: <%=
+                                                project.description %>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                Experience: <%=
+                                                project.experience %>
+                                            </p>
+                                        </li>
                                         <!-- <li>Apply by date:</li>
                                         <br />
                                         <p>10th June, 2021</p> -->
-                                        <li>Skills Required:</li>
-                                        <br />
-                                        <p><%= project.skillsNeeded %></p>
+                                        <li>
+                                            <p>
+                                                Skills Required: <%=
+                                                project.skillsNeeded %>
+                                            </p>
+                                        </li>
                                     </ul>
                                 </div>
                                 <br />
@@ -180,7 +214,6 @@
             </div>
         </section>
 
-        <%- include('partials/footer.ejs') %>
         <script>
             function change() {
                 let text = document.getElementById("myButton");
@@ -188,5 +221,6 @@
                 text.style.backgroundColor = "blue";
             }
         </script>
+        <%- include('partials/footer.ejs') %>
     </body>
 </html>

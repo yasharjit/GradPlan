@@ -115,6 +115,10 @@ router.get("/teamMembersPage", (req, res) => {
     });
 });
 
-
+router.get("/teamFormationDetails", (req, res) => {
+    return res.render("teamFormationDetails", {
+        title: "Team Members Details",
+    });
+});
 
 module.exports = router;

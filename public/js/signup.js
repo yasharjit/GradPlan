@@ -1,4 +1,4 @@
-const passvaluexx = async (name, email, password, passwordConfirm) => {
+const passvaluexx = async (name, email, password, skills) => {
     const hideAlert = () => {
         const el = document.querySelector(".alerts");
         if (el) {
@@ -22,7 +22,7 @@ const passvaluexx = async (name, email, password, passwordConfirm) => {
                 name,
                 email,
                 password,
-                passwordConfirm,
+                skills,
             },
         });
         if (result.data.status === "success") {
@@ -43,6 +43,6 @@ document.getElementById("signupForm").addEventListener("submit", (e) => {
     const name = document.getElementById("name").value;
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
-    const passwordConfirm = document.getElementById("confirmPassword").value;
-    passvaluexx(name, email, password, passwordConfirm);
+    const skills = document.getElementById("skill").value;
+    passvaluexx(name, email, password, skills);
 });

@@ -86,6 +86,12 @@ router.get("/inviteForm", (req, res) => {
     });
 });
 
+router.get("/inviteList", (req, res) => {
+    return res.render("inviteList", {
+        title: "Invite List",
+    });
+});
+
 router.get(
     "/project/:id/postedBy/:userid",
     catchAsync(async function (req, res) {

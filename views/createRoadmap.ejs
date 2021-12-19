@@ -55,7 +55,7 @@
         <%- include('partials/navbar.ejs') %>
         <div>
             <div class="container">
-                <form id="newRoadmapForm">
+                <form id="newRoadmapForm" action="#">
                     <div class="container">
                         <center>
                             <h1>Get Your Roadmap</h1>
@@ -72,26 +72,13 @@
                                 Frontend Development
                             </option>
                             <option value="backend">Backend Development</option>
-                            <option value="Full Stack Development">
+                            <option value="fullstack">
                                 Full Stack Development
                             </option>
-                            <option value="App Development">
-                                App Development
-                            </option>
-                            <option value="Machine Learning">
-                                Machine Learning
-                            </option>
-                            <option value="Game Development">
-                                Game Development
-                            </option>
-                            <option value="Interview Preparation with C++">
+                            <option value="app">App Development</option>
+                            <option value="ml">Machine Learning</option>
+                            <option value="cpp">
                                 Interview Preparation with C++
-                            </option>
-                            <option value="Interview Preparation with Python">
-                                Interview Preparation with Python
-                            </option>
-                            <option value="App Development">
-                                Interview Preparation with Java
                             </option>
                         </select>
 
@@ -103,20 +90,17 @@
                             style="margin-bottom: 60px; margin-left: -625px"
                         >
                             <option value="beginner">Beginner</option>
-                            <option value="intermediate">Intermediate</option>
                             <option value="advanced">Advanced</option>
                         </select>
 
-                        <a href="/roadmapBuilder"
-                            ><button
-                                type="button"
-                                class="loginbtn"
-                                id="submitted"
-                                style="margin-top: 35px"
-                            >
-                                Submit
-                            </button>
-                        </a>
+                        <button
+                            type="submit"
+                            class="loginbtn"
+                            id="submitted"
+                            style="margin-top: 35px"
+                        >
+                            Submit
+                        </button>
                     </div>
                 </form>
             </div>

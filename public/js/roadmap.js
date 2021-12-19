@@ -421,27 +421,64 @@ const GameDevRoadmap = [
 
 var finalPath;
 
-// document
-//     .getElementById("newRoadmapForm")
-//     .addEventListener("submit", assignVariables);
+document
+    .getElementById("newRoadmapForm")
+    .addEventListener("submit", assignVariables);
 
-// function assignVariables(e) {
-//     e.preventDefault();
-//     var select1 = document.getElementById("presentSkillLevel");
-//     var skillLevel = select1.options[select1.selectedIndex].value;
-//     var select2 = document.getElementById("skillName");
-//     var skillName = select2.options[select2.selectedIndex].value;
+function assignVariables(e) {
+    e.preventDefault();
+    var select1 = document.getElementById("presentSkillLevel");
+    var skillLevel = select1.options[select1.selectedIndex].value;
+    var select2 = document.getElementById("skillName");
+    var skillName = select2.options[select2.selectedIndex].value;
 
-//     for (var i = 0; i < Roadmap.length; i++) {
-//         if (Roadmap[i].skill == skillName && Roadmap[i].lvl == skillLevel) {
-//             setTimeout(() => {
-//                 window.location.href = "http://localhost:8000/roadmapBuilder";
-//             }, 1000);
-//             console.log("found");
-//             finalPath = Roadmap[i].path;
-//             document.cookie = `path = ${finalPath}`;
-//             console.log(finalPath);
-//             return;
-//         }
-//     }
-// }
+    if (skillName == "frontend" && skillLevel == "beginner") {
+        setTimeout(() => {
+            window.location.href = "http://localhost:8000/roadmapBuilder1";
+        }, 1000);
+    } else if (skillName == "frontend" && skillLevel == "advanced") {
+        setTimeout(() => {
+            window.location.href = "http://localhost:8000/roadmapBuilder2";
+        }, 1000);
+    } else if (skillName == "backend" && skillLevel == "beginner") {
+        setTimeout(() => {
+            window.location.href = "http://localhost:8000/roadmapBuilder3";
+        }, 1000);
+    } else if (skillName == "backend" && skillLevel == "advanced") {
+        setTimeout(() => {
+            window.location.href = "http://localhost:8000/roadmapBuilder4";
+        }, 1000);
+    } else if (skillName == "fullstack" && skillLevel == "beginner") {
+        setTimeout(() => {
+            window.location.href = "http://localhost:8000/roadmapBuilder5";
+        }, 1000);
+    } else if (skillName == "fullstack" && skillLevel == "advanced") {
+        setTimeout(() => {
+            window.location.href = "http://localhost:8000/roadmapBuilder6";
+        }, 1000);
+    } else if (skillName == "app" && skillLevel == "beginner") {
+        setTimeout(() => {
+            window.location.href = "http://localhost:8000/roadmapBuilder7";
+        }, 1000);
+    } else if (skillName == "app" && skillLevel == "advanced") {
+        setTimeout(() => {
+            window.location.href = "http://localhost:8000/roadmapBuilder8";
+        }, 1000);
+    } else if (skillName == "ml" && skillLevel == "beginner") {
+        setTimeout(() => {
+            window.location.href = "http://localhost:8000/roadmapBuilder9";
+        }, 1000);
+    } else if (skillName == "ml" && skillLevel == "advanced") {
+        setTimeout(() => {
+            window.location.href = "http://localhost:8000/roadmapBuilder10";
+        }, 1000);
+    } else if (skillName == "cpp" && skillLevel == "beginner") {
+        setTimeout(() => {
+            window.location.href = "http://localhost:8000/roadmapBuilder11";
+        }, 1000);
+    } else if (skillName == "cpp" && skillLevel == "advanced") {
+        setTimeout(() => {
+            window.location.href = "http://localhost:8000/roadmapBuilder12";
+        }, 1000);
+    }
+}

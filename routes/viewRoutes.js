@@ -115,12 +115,6 @@ router.get(
     })
 );
 
-router.get("/teamMembersPage", (req, res) => {
-    return res.render("teamMembersPage", {
-        title: "Team Members",
-    });
-});
-
 router.get("/teamFormationDetails", (req, res) => {
     return res.render("teamFormationDetails", {
         title: "Team Members Details",

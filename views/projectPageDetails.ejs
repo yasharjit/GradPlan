@@ -3,7 +3,7 @@
     <head>
         <title><%= project.projectName %></title>
         <link
-            href="public/images/favicon.png"
+            href="../public/images/favicon.png"
             rel="icon"
             type="image/gif"
             sizes="16x16"
@@ -18,12 +18,6 @@
             href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
         />
         <!-- <link rel="stylesheet" href="../public/css/style.css" /> -->
-        <link
-            href="public/images/favicon.png"
-            rel="icon"
-            type="image/gif"
-            sizes="16x16"
-        />
         <style>
             .flex-container {
                 display: flex;
@@ -70,7 +64,6 @@
         </script> -->
     </head>
     <body>
-        <%- include('partials/navbar.ejs') %>
         <div class="flex-container">
             <h5
                 style="
@@ -87,9 +80,9 @@
                 Recommended Projects For You!
             </h5>
             <div class="item">
-                <h6 class="heading-style">Project Name: Mads libs Generator</h6>
+                <h6 class="heading-style"><strong> Mads libs Generator</strong></h6>
                 <h6 class="heading-style">
-                    Project Description: One of the best ideas to start
+                    One of the best ideas to start
                     experimenting you hands-on python projects for students is
                     working on Mad Libs Generator...
                 </h6>
@@ -97,20 +90,20 @@
 
             <div class="item">
                 <h6 class="heading-style">
-                    Project Name: Text Based Adventure Game
+                    <strong>Based Adventure Game</strong> 
                 </h6>
                 <h6 class="heading-style">
-                    Project Description: This is a basic version of the Adventure
+                    This is a basic version of the Adventure
                     game. It is completely text-based. In this version of the
                     game, users can move about through different rooms within a
-                    single setting, .....
+                    single setting, ...
                 </h6>
             </div>
 
             <div class="item">
-                <h6 class="heading-style">Project Name:Number Guessing</h6>
+                <h6 class="heading-style"><strong>Number Guessing</strong></h6>
                 <h6 class="heading-style">
-                    Project Description:This is one of the simple python
+                    This is one of the simple python
                     projects yet an exciting one. You can...
                 </h6>
             </div>
@@ -127,21 +120,21 @@
                             style="margin-top: -88%;"
                         >
                             
-                            <div class="_p-price-box"style="padding-right:15px;padding-left:15px;
-            
-                            width: 70%;
-                            height: 40rem;
-                            margin-left: 0%;
-                            margin-top: 1%;
+                            <div class="_p-price-box"style="
+                            padding-right:15px;padding-left:15px;
+                            width: 80%;
+                            height: 55rem;
+                            margin-left: 8%;
+                            margin-top: 7%;
                             
                             border: 0px solid lightgray;
-                            background-color:#E0FFFF;
+                            background-color:#f2f2f2;
                             border-radius: 15px;
-                            padding: 10px;">
+                            padding-top: 6%;">
                             <center>
-                                <p class="_p-name">
+                                <h4 class="_p-name" style="font-size: 18px; font-weight: bold; margin-bottom: 10%; margin-left: -6%;">
                                     <%= project.projectName %>
-                                </p>
+                                </h4>
                             </center>
                                 <div class="_p-features">
                                     <ul>
@@ -189,7 +182,12 @@
                                                 id="myButton"
                                                 class="btn-theme btn buy-btn"
                                                 tabindex="0"
-                                                style="margin-left: 40%;"
+                                                style="margin-left: 40%; 
+                                                background-color: #51aeff; 
+                                                padding: 3%; 
+                                                margin-top: -4%;
+                                                border-radius: 35px;
+                                                "
                                             >
                                                 <i
                                                     class="fa fa-paper-plane"
@@ -220,14 +218,5 @@
                 </div>
             </div>
         </section>
-
-        <script>
-            function change() {
-                let text = document.getElementById("myButton");
-                text.innerHTML = "Applied";
-                text.style.backgroundColor = "blue";
-            }
-        </script>
-        <%- include('partials/footer.ejs') %>
     </body>
 </html>

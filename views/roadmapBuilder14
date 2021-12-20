@@ -1,0 +1,470 @@
+<html>
+    <head>
+        <title><%= title %></title>
+        <style>
+            :root {
+                --bgColor: #1c2329;
+            }
+
+            body {
+                background: var(--bgColor);
+            }
+
+            #infographic .circle {
+                width: 320px;
+                height: 320px;
+                border-radius: 50%;
+                border: 2px solid currentColor;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                padding: 40px;
+                position: absolute;
+                left: 50%;
+                background-color: var(--bgColor);
+            }
+            #infographic :not(:nth-child(even)) .circle {
+                transform: translateX(-100%);
+            }
+            #infographic .circle i {
+                font-size: 5em;
+                margin-bottom: 20px;
+                color: currentColor;
+            }
+            #infographic article {
+                max-width: 410px;
+                margin-bottom: 20px;
+                cursor: pointer;
+                left: 50%;
+                position: relative;
+            }
+            #infographic article header {
+                border-radius: 30px;
+            }
+            #infographic article header i {
+                display: flex;
+                font-size: 2em;
+                border-radius: 50%;
+                background-clip: padding-box;
+                padding: 14px;
+                transition: transform 0.4s;
+                color: #fff;
+                border: 16px solid var(--bgColor);
+                margin: -14px 90% -27px 1px;
+            }
+            #infographic article header h6 {
+                text-transform: uppercase;
+                margin: 0 30px;
+                padding: 5px;
+                font-size: 14px;
+            }
+            #infographic article .body {
+                background: var(--bgColor);
+                padding: 0 20px;
+                border-bottom-right-radius: 30px;
+                border-bottom-left-radius: 30px;
+                max-height: 0;
+                transition: max-height 0.5s, padding 0.5s;
+                overflow: hidden;
+            }
+            #infographic article .body .btn {
+                padding: 3px 10px;
+                text-transform: uppercase;
+            }
+            #infographic :nth-child(even) article {
+                text-align: right;
+                transform: translateX(-100%);
+            }
+            #infographic :nth-child(even) article header {
+                flex-flow: row-reverse;
+                border-top-left-radius: 30px;
+                border-bottom-left-radius: 30px;
+            }
+            #infographic :nth-child(even) article header i {
+                margin: -17px 85% -25px 86%;
+            }
+            #infographic article[data-step="1"] {
+                margin-left: 20px;
+            }
+            #infographic article[data-step="2"] {
+                margin-left: 50px;
+            }
+            #infographic article[data-step="3"] {
+                margin-left: 46px;
+            }
+            #infographic article[data-step="4"] {
+                margin-left: 0;
+            }
+            #infographic article[data-step="5"] {
+                margin-left: -60px;
+            }
+            #infographic article[data-step="6"] {
+                margin-left: -40px;
+            }
+            #infographic article[data-step="7"] {
+                margin-left: -70px;
+            }
+            #infographic article[data-step="8"] {
+                margin-left: -60px;
+            }
+            #infographic article[data-step="9"] {
+                margin-left: 0;
+            }
+            #infographic article[data-step="10"] {
+                margin-left: 70px;
+            }
+            #infographic article[data-step="11"] {
+                margin-left: 60px;
+            }
+            #infographic article[data-step="12"] {
+                margin-left: 100px;
+            }
+            #infographic article[data-step="13"] {
+                margin-left: 80px;
+            }
+            #infographic article[data-step="14"] {
+                margin-left: 30px;
+            }
+            #infographic article[data-step="15"] {
+                margin-left: -50px;
+            }
+            #infographic article[data-step="16"] {
+                margin-left: -250px;
+            }
+            #infographic .one article header {
+                background-color: rgba(37, 59, 143, 0.3);
+                color: #8f2543;
+            }
+            #infographic .one article header i {
+                background-color: #007bff;
+            }
+            #infographic .two article header {
+                background-color: rgba(0, 108, 99, 0.1);
+                color: #006c63;
+            }
+            #infographic .two article header i {
+                background-color: #28a745;
+            }
+            #infographic .three article header {
+                background-color: rgba(69, 80, 162, 0.1);
+                color: #dc3545;
+            }
+            #infographic .three article header i {
+                background-color: #dc3545;
+            }
+            #infographic article:hover header i {
+                transform: scale(1.2);
+            }
+            #infographic article.active header {
+                border-bottom-right-radius: 0;
+            }
+            #infographic article.active header i {
+                --opacity: 0.4;
+                transform: scale(1) !important;
+            }
+            #infographic article.active .body {
+                padding: 20px;
+                max-height: 300px;
+                border: 1px solid;
+            }
+            #infographic .two article.active header {
+                border-bottom-left-radius: 0;
+            }
+            .h6-style {
+                text-align: center;
+            }
+            .img-style {
+                margin-left: 7%;
+            }
+        </style>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+    </head>
+    <body>
+        <%- include('partials/navbar.ejs') %>
+        <div
+            class="d-flex justify-content-center align-items-center flex-column"
+        >
+            <h1
+                style="
+                    color: #de0034;
+                    font-family: Sen, sans-serif;
+                    font-size: 35px;
+                    font-weight: 300;
+                    line-height: 58px;
+                    margin: 2% 0% 6% 37%;
+                "
+            >
+                <!-- Infographic Roadmap -->
+            </h1>
+        </div>
+
+        <div
+            id="infographic"
+            class="d-flex flex-column align-items-center py-5"
+        >
+            <div class="step one text-primary" style="margin-top: -4%">
+                <div class="circle">
+                    <img
+                        src="../public/images/meteor.png"
+                        style="margin-left: 10%"
+                    />
+                    <h4 style="color: #006c63">
+                        Advanced<br />Ready for this?
+                    </h4>
+                </div>
+                <article data-step="1">
+                    <header class="d-flex align-items-center text-primary">
+                        <i class="fas fa-meteor"></i>
+                        <a
+                            href="https://www.simplilearn.com/java-full-stack-developer-certification-training-course?&utm_source=google&utm_medium=cpc&utm_term=%2Bjava%20%2Bcourse&utm_content=949673033-95299790303-420728905879&utm_device=c&utm_campaign=Search-TechCluster-SD-FullStack-IN-Main-AllDevice-adgroup-Java-Course&gclid=Cj0KCQiAzMGNBhCyARIsANpUkzMUp7J9aUsVfHnVXbhk1i1ggn6EiNhqTjQ42nh-1uXZnTAuTIfMLpIaAm-KEALw_wcB"
+                            ><h6 class="h6-style">
+                                Full Stack Java Developer
+                            </h6></a
+                        >
+                    </header>
+
+                    <div class="body">
+                        <small>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex ea commodo consequat.
+                        </small>
+
+                        <div
+                            class="d-flex justify-content-between mt-3 controls"
+                        >
+                            <a> </a>
+                            <a class="btn btn-outline-primary" href="#">Next</a>
+                        </div>
+                    </div>
+                </article>
+                <article data-step="2">
+                    <header class="d-flex align-items-center text-primary">
+                        <i class="fas fa-meteor"></i>
+                        <a
+                            href="https://www.udemy.com/course/intermediate-advanced-java-programming/"
+                            ><h6 class="h6-style">
+                                Intermediate & Advanced Java Programming
+                            </h6></a
+                        >
+                    </header>
+
+                    <div class="body">
+                        <small>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex ea commodo consequat.
+                        </small>
+                        <div
+                            class="d-flex justify-content-between mt-3 controls"
+                        >
+                            <a class="btn btn-outline-primary" href="#">Prev</a>
+                            <a class="btn btn-outline-primary" href="#">Next</a>
+                        </div>
+                    </div>
+                </article>
+                <article data-step="3">
+                    <header class="d-flex align-items-center text-primary">
+                        <i class="fas fa-meteor"></i>
+                        <a href="https://hackr.io/blog/best-java-courses">
+                            <h6 class="h6-style">
+                                Best Java Courses To Study Online
+                            </h6></a
+                        >
+                    </header>
+
+                    <div class="body">
+                        <small>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex ea commodo consequat.
+                        </small>
+                        <div
+                            class="d-flex justify-content-between mt-3 controls"
+                        >
+                            <a class="btn btn-outline-primary" href="#">Prev</a>
+                            <a class="btn btn-outline-primary" href="#">Next</a>
+                        </div>
+                    </div>
+                </article>
+                <article data-step="4">
+                    <header class="d-flex align-items-center text-primary">
+                        <i class="fas fa-meteor"></i>
+                        <a href="https://developers.google.com/machine-learning/crash-course/ml-intro"
+                            ><h6 class="h6-style">
+                                Machine Learning Crash Course
+                            </h6></a
+                        >
+                    </header>
+
+                    <div class="body">
+                        <small>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex ea commodo consequat.
+                        </small>
+                        <div
+                            class="d-flex justify-content-between mt-3 controls"
+                        >
+                            <a class="btn btn-outline-primary" href="#">Prev</a>
+                            <a class="btn btn-outline-primary" href="#">Next</a>
+                        </div>
+                    </div>
+                </article>
+                <article data-step="5">
+                    <header
+                        class="d-flex align-items-center text-primary"
+                        style="margin-left: 5%"
+                    >
+                        <i class="fas fa-meteor"></i>
+                        <a href="">
+                            <h6 class="h6-style">Final Challenge Project</h6></a
+                        >
+                    </header>
+
+                    <div class="body">
+                        <small>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex ea commodo consequat.
+                        </small>
+                        <div
+                            class="d-flex justify-content-between mt-3 controls"
+                        >
+                            <a class="btn btn-outline-primary" href="#">Prev</a>
+                            <a class="btn btn-outline-primary" href="#">Next</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- <div class="step two text-success"style="margin-top: 3%; margin-bottom: 3%;">
+               <div class="circle">
+                  <img src="../public/images/cookie.png" class="img-style">
+                  <h4 style="color: #006c63;">STEP 2.<br />You're doing great!</h4>
+               </div>
+               <article data-step="6">
+                  <header class="d-flex align-items-center text-success">
+                     <i class="fas fa-cookie-bite"></i>
+                     <h6 class = "h6-style">Lorem Ipsum dolor sit Amet</h6>
+                  </header>
+         
+                  <div class="body">
+                     <small> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </small>
+         
+                     <div class="d-flex justify-content-between mt-3 controls">
+                        <a class="btn btn-outline-success" href="#">Prev</a>
+                        <a class="btn btn-outline-success" href="#">Next</a>
+                     </div>
+                  </div>
+               </article>
+               <article data-step="7">
+                  <header class="d-flex align-items-center text-success">
+                     <i class="fas fa-cookie-bite"></i>
+                     <h6  class = "h6-style">Lorem Ipsum dolor sit Amet</h6>
+                  </header>
+         
+                  <div class="body">
+                     <small> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </small>
+                     <div class="d-flex justify-content-between mt-3 controls">
+                        <a class="btn btn-outline-success" href="#">Prev</a>
+                        <a class="btn btn-outline-success" href="#">Next</a>
+                     </div>
+                  </div>
+               </article>
+               <article data-step="8">
+                  <header class="d-flex align-items-center text-success">
+                     <i class="fas fa-cookie-bite"></i>
+                     <h6 class = "h6-style">Lorem Ipsum dolor sit Amet</h6>
+                  </header>
+         
+                  <div class="body">
+                     <small> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </small>
+                     <div class="d-flex justify-content-between mt-3 controls">
+                        <a class="btn btn-outline-success" href="#">Prev</a>
+                        <a class="btn btn-outline-success" href="#">Next</a>
+                     </div>
+                  </div>
+               </article>
+               <article data-step="9">
+                  <header class="d-flex align-items-center text-success" style="margin-right: 5%;">
+                     <i class="fas fa-cookie-bite"></i>
+                     <h6 class = "h6-style">Lorem Ipsum dolor sit Amet</h6>
+                  </header>
+         
+                  <div class="body">
+                     <small> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </small>
+                     <div class="d-flex justify-content-between mt-3 controls">
+                        <a class="btn btn-outline-success" href="#">Prev</a>
+                        <a class="btn btn-outline-success" href="#">Next</a>
+                     </div>
+                  </div>
+               </article>
+               <article data-step="10">
+                  <header class="d-flex align-items-center text-success" style="margin-right: 10%;">
+                     <i class="fas fa-cookie-bite"></i>
+                     <h6 class = "h6-style">Lorem Ipsum dolor sit Amet</h6>
+                  </header>
+         
+                  <div class="body">
+                     <small> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </small>
+                     <div class="d-flex justify-content-between mt-3 controls">
+                        <a class="btn btn-outline-success" href="#">Prev</a>
+                        <a class="btn btn-outline-success" href="#">Next</a>
+                     </div>
+                  </div>
+               </article>
+            </div> -->
+        </div>
+        <script>
+            $("#infographic article").click(function () {
+                $(this).toggleClass("active");
+            });
+            $("#infographic article .controls .btn").on("click", function (e) {
+                e.preventDefault();
+                e.stopPropagation();
+                var currentEl = $(this).closest("article");
+                var currentI = currentEl.data("step");
+                currentEl.removeClass("active");
+                var nextI = $(this).is(":first-child")
+                    ? currentI - 1
+                    : currentI + 1;
+                var nextEl = $("article[data-step='" + nextI + "']");
+                nextEl.click();
+                var y = document
+                    .querySelector("article[data-step='" + nextI + "'")
+                    .getBoundingClientRect().top;
+                var supportsNativeSmoothScroll =
+                    "scrollBehavior" in document.documentElement.style;
+
+                if (supportsNativeSmoothScroll) {
+                    window.scrollTo({
+                        top: y + window.pageYOffset - 300,
+                        behavior: "smooth",
+                    });
+                } else {
+                    window.scrollTo(0, y + window.pageYOffset - 300);
+                }
+            });
+            $(document).mouseup(function (e) {
+                var tgt = $("#infographic article.active");
+                if (!tgt.is(e.target) && tgt.has(e.target).length === 0)
+                    tgt.removeClass("active");
+            });
+        </script>
+        <%- include('partials/footer.ejs') %>
+    </body>
+</html>

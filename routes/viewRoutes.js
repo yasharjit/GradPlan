@@ -69,8 +69,74 @@ router.get("/userPage", (req, res) => {
     });
 });
 
-router.get("/roadmapBuilder", (req, res) => {
-    return res.render("roadmapBuilder", {
+router.get("/roadmapBuilder1", (req, res) => {
+    return res.render("roadmapBuilder1", {
+        title: "Roadmap Builder",
+    });
+});
+
+router.get("/roadmapBuilder2", (req, res) => {
+    return res.render("roadmapBuilder2", {
+        title: "Roadmap Builder",
+    });
+});
+
+router.get("/roadmapBuilder3", (req, res) => {
+    return res.render("roadmapBuilder3", {
+        title: "Roadmap Builder",
+    });
+});
+
+router.get("/roadmapBuilder4", (req, res) => {
+    return res.render("roadmapBuilder4", {
+        title: "Roadmap Builder",
+    });
+});
+
+router.get("/roadmapBuilder5", (req, res) => {
+    return res.render("roadmapBuilder5", {
+        title: "Roadmap Builder",
+    });
+});
+
+router.get("/roadmapBuilder6", (req, res) => {
+    return res.render("roadmapBuilder6", {
+        title: "Roadmap Builder",
+    });
+});
+
+router.get("/roadmapBuilder7", (req, res) => {
+    return res.render("roadmapBuilder7", {
+        title: "Roadmap Builder",
+    });
+});
+
+router.get("/roadmapBuilder8", (req, res) => {
+    return res.render("roadmapBuilder8", {
+        title: "Roadmap Builder",
+    });
+});
+
+router.get("/roadmapBuilder9", (req, res) => {
+    return res.render("roadmapBuilder9", {
+        title: "Roadmap Builder",
+    });
+});
+
+router.get("/roadmapBuilder10", (req, res) => {
+    return res.render("roadmapBuilder10", {
+        title: "Roadmap Builder",
+    });
+});
+
+router.get("/roadmapBuilder11", (req, res) => {
+    return res.render("roadmapBuilder11", {
+        title: "Roadmap Builder",
+    });
+});
+
+router.get("/roadmapBuilder12", (req, res) => {
+    return res.render("roadmapBuilder12", {
         title: "Roadmap Builder",
     });
 });
